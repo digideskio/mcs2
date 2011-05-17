@@ -1,5 +1,9 @@
 Mcs2::Application.routes.draw do
+  devise_for :users
+
   resources :servers
+  
+  root :to => "servers#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
