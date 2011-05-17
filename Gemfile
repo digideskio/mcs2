@@ -7,6 +7,7 @@ gem 'sass'
 gem 'barista'
 gem 'therubyracer', :require => nil
 gem 'jquery-rails'
+gem "compass", ">= 0.11.1"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
