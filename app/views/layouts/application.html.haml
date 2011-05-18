@@ -5,20 +5,34 @@
     =stylesheet_link_tag 'print.css', :media => 'print'
     /[if IE]
       =stylesheet_link_tag 'ie.css', :media => 'screen, projection'
+    %title Minecraft
+    %link{:href => "http://fonts.googleapis.com/css?family=VT323", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Cabin+Sketch:bold", :rel => "stylesheet", :type => "text/css"}
+    %script{:src => "/javascripts/application.js?1305402372", :type => "text/javascript"}
   %body
-    %header
-      %nav
-        %li
-          =link_to "Home", root_path
-        %li
-          -if user_signed_in?
-            =link_to "User list", users_path
-          -else
-            =link_to "Register", new_user_registration_path
-        %li 
-          -if user_signed_in?
-            =link_to "Logout", destroy_user_session_path
-          -else
-            =link_to "Login", new_user_session_path
-    =yield
+    #container
+      #header
+        %span#title Minecraft Server Corp
+        %nav
+          %ul
+            %li
+              =link_to "Home", root_path
+            %li
+              -if user_signed_in?
+                =link_to "User list", users_path
+              -else
+                =link_to "Register", new_user_registration_path
+            %li 
+              -if user_signed_in?
+                =link_to "Logout", destroy_user_session_path
+              -else
+                =link_to "Login", new_user_session_path
+          %span.notifications
+            %span.notice.removed
+              =notice
+            %span.alert.removed
+              =alert
+      
+      #content
+        =yield
 

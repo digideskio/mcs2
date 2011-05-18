@@ -1,11 +1,11 @@
-%h1 Listing servers
+%div#serverlist
+  -if user_signed_in?
+    = link_to 'New Server', new_server_path
 
--if user_signed_in?
-  = link_to 'New Server', new_server_path
-
-%ul
-  - @servers.each do |server|
-    %li
-      = link_to server.name, server
+  %ul#serverlist-ul
+    - @servers.each do |server|
+      %li.server
+        %h1
+          =link_to server.name, server
 
 
