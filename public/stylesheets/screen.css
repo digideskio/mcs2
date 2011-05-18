@@ -319,6 +319,10 @@ body .showgrid {
 body a {
   text-decoration: none;
 }
+/* line 25, ../../app/stylesheets/screen.scss */
+body br.clearboth {
+  clear: both;
+}
 /* line 27, ../../app/stylesheets/screen.scss */
 body #container {
   width: 950px;
@@ -332,46 +336,57 @@ body #header #title, body #footer #title {
   font-family: 'cabin sketch';
   line-height: .8em;
 }
-/* line 36, ../../app/stylesheets/screen.scss */
-body #header nav, body #footer nav {
-  background: none;
-  width: 100%;
-  font-size: 2.5em;
+/* line 32, ../../app/stylesheets/screen.scss */
+body #header #title a, body #footer #title a {
+  color: #464646;
 }
-/* line 40, ../../app/stylesheets/screen.scss */
+/* line 37, ../../app/stylesheets/screen.scss */
+body #header nav, body #footer nav {
+  display: inline;
+  float: right;
+  background: none;
+  font-size: 2.5em;
+  font-family: 'VT323';
+}
+/* line 43, ../../app/stylesheets/screen.scss */
+body #header nav ul, body #footer nav ul {
+  float: right;
+}
+/* line 44, ../../app/stylesheets/screen.scss */
 body #header nav .alert, body #footer nav .alert {
   float: right;
   background: #fff6bf;
   padding: 0px 20px 0px 20px;
 }
-/* line 45, ../../app/stylesheets/screen.scss */
+/* line 49, ../../app/stylesheets/screen.scss */
 body #header nav .notice, body #footer nav .notice {
   float: right;
   background: #e6efc2;
 }
-/* line 49, ../../app/stylesheets/screen.scss */
+/* line 53, ../../app/stylesheets/screen.scss */
 body #header nav ul, body #footer nav ul {
   display: inline;
+  margin: 0px;
+  padding: 0px;
 }
-/* line 51, ../../app/stylesheets/screen.scss */
+/* line 57, ../../app/stylesheets/screen.scss */
 body #header nav ul li, body #footer nav ul li {
+  padding: 0px;
   display: inline;
 }
-/* line 59, ../../app/stylesheets/screen.scss */
+/* line 64, ../../app/stylesheets/screen.scss */
+body #content {
+  clear: both;
+}
+/* line 67, ../../app/stylesheets/screen.scss */
 body #content .userforms {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 310px;
-  display: inline;
-  float: left;
-  position: relative;
-  margin: 0 -280px 1.5em 280px;
-  margin-top: 100px;
-  padding: 30px;
+  width: 910px;
+  padding: 30px 0px 50px 320px;
   border: 1px solid black;
   background: #464646;
-  border-radius: 30px;
   color: white;
 }
 /* line 18, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
@@ -441,31 +456,79 @@ body #content .userforms textarea {
 * html body #content .userforms {
   overflow-x: hidden;
 }
-/* line 69, ../../app/stylesheets/screen.scss */
+/* line 75, ../../app/stylesheets/screen.scss */
 body #content .userforms h1 {
   color: #fAFAFA;
 }
-/* line 70, ../../app/stylesheets/screen.scss */
+/* line 76, ../../app/stylesheets/screen.scss */
 body #content .userforms a {
   color: #F0F0F0;
 }
-/* line 72, ../../app/stylesheets/screen.scss */
+/* line 78, ../../app/stylesheets/screen.scss */
 body #content #serverlist {
   border-width: 1px 1px 1px 1px;
   border-color: black;
   border-style: solid;
   background: url('/images/trans.png?1305402372');
+  width: 870px -2;
 }
-/* line 77, ../../app/stylesheets/screen.scss */
+/* line 84, ../../app/stylesheets/screen.scss */
+body #content #serverlist #serverfilters {
+  background: #464646;
+  height: 70px;
+}
+/* line 88, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server {
-  border-bottom: 4px solid #363636;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 910px;
+  border-bottom: 4px solid #464646;
   height: 60px;
   color: black;
   background: url('/images/trans.png?1305402372');
   display: block;
   text-decoration: none;
 }
-/* line 86, ../../app/stylesheets/screen.scss */
+/* line 147, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body #content #serverlist .server {
+  overflow-x: hidden;
+}
+/* line 96, ../../app/stylesheets/screen.scss */
+body #content #serverlist .server .serverleft {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 350px;
+}
+/* line 147, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body #content #serverlist .server .serverleft {
+  overflow-x: hidden;
+}
+/* line 98, ../../app/stylesheets/screen.scss */
+body #content #serverlist .server .serverleft span {
+  display: block;
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+/* line 105, ../../app/stylesheets/screen.scss */
+body #content #serverlist .server .serverleft .servername {
+  padding-left: 40px;
+  font-size: 2em;
+}
+/* line 110, ../../app/stylesheets/screen.scss */
+body #content #serverlist .server .serverright {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 510px;
+}
+/* line 147, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body #content #serverlist .server .serverright {
+  overflow-x: hidden;
+}
+/* line 115, ../../app/stylesheets/screen.scss */
 body #content #userlist {
   display: inline;
   float: left;
@@ -476,7 +539,7 @@ body #content #userlist {
 * html body #content #userlist {
   overflow-x: hidden;
 }
-/* line 88, ../../app/stylesheets/screen.scss */
+/* line 117, ../../app/stylesheets/screen.scss */
 body #content #userlist .user {
   display: inline;
   float: left;
