@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110517215858) do
+ActiveRecord::Schema.define(:version => 20110518210914) do
 
   create_table "servers", :force => true do |t|
     t.datetime "created_at"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(:version => 20110517215858) do
     t.string   "whitelist_url"
     t.integer  "port"
     t.boolean  "status"
+    t.integer  "user_id"
   end
 
   create_table "users", :force => true do |t|

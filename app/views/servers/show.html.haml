@@ -1,7 +1,37 @@
 %h1=@server.name
 
+.server-content
+%p
+  submitted by: 
+  =link_to @server.user.username, @server.user
 
-%p todo... show the fields!
-%p make sure to used the server_helper method game_mode_to_s when displaying the game_mode. it takes in the game_mode as a parameter and will output the string version
+%p
+  Server Address:
+  = @server.mc_server_address
 
-= link_to 'Edit', edit_server_path(@server)
+%p
+  Port:
+  = @server.port
+
+%p
+  Description:
+  = h(@server.description).gsub(/\n/, '<br />')
+  
+%p
+  Location:
+  = @server.location
+
+%p
+  Game Mode:
+  = game_mode_to_s @server.game_mode
+
+%p
+  Website:
+  = @server.website
+  
+%p
+  Whitelist URL:
+  = @server.whitelist_url
+
+- if can? :update, @server
+  = link_to 'Edit', edit_server_path(@server)

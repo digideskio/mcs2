@@ -1,5 +1,7 @@
 class ServersController < ApplicationController
   before_filter :authenticate_user!, :except => [:index, :show]
+  before_filter :assign_user
+  load_and_authorize_resource
   
   # GET /servers
   # GET /servers.xml
@@ -42,6 +44,7 @@ class ServersController < ApplicationController
   # POST /servers
   # POST /servers.xml
   def create
+    params[:server]['user'] = @user
     @server = Server.new(params[:server])
 
     respond_to do |format|
@@ -82,4 +85,9 @@ class ServersController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  private
+    def assign_user
+      @user = current_user
+    end
 end

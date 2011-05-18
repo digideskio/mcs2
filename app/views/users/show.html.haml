@@ -1,8 +1,8 @@
 %h1= @user.username
--me = @user == current_user
+-me = can? :update, @user
 -if me
   %p
-    Email: 
+    Email (not shown publically): 
     =@user.email
 %p
   Minecraft Username:

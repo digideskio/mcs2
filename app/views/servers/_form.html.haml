@@ -35,7 +35,7 @@
     - [[2, "Creative"], [1, "Survival"], [0, "Other"]].each do |gm|
       %br
       = f.label gm[1]
-      = f.radio_button :game_mode, gm[0], :checked => gm[0] == 2
+      = f.radio_button :game_mode, gm[0], :checked => @server.game_mode.nil? ? gm[0] == 2 : gm[0] == @server.game_mode 
   .field
     = f.label :whitelist_url, "Whitelist Website URL"
     %br
