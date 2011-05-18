@@ -17,21 +17,24 @@
   Description:
   = h(@server.description).gsub(/\n/, '<br />')
   
-%p
-  Location:
-  = @server.location
+-if !@server.location.nil? and !@server.location.blank?
+  %p
+    Location:
+    = @server.location
 
 %p
   Game Mode:
   = game_mode_to_s @server.game_mode
 
-%p
-  Website:
-  = @server.website
-  
-%p
-  Whitelist URL:
-  = @server.whitelist_url
+-if !@server.website.nil? and !@server.website.blank?
+  %p
+    Website:
+    = @server.website
+
+-if !@server.whitelist_url.nil? and !@server.whitelist_url.blank?
+  %p
+    Whitelist URL:
+    = @server.whitelist_url
 
 - if can? :update, @server
   = link_to 'Edit', edit_server_path(@server)

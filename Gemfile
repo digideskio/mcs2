@@ -11,6 +11,10 @@ gem 'jquery-rails'
 gem "compass", ">= 0.11.1"
 gem 'haml-rails'
 
+group :development do
+  gem 'annotate-models'
+end
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

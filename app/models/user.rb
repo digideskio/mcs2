@@ -1,3 +1,25 @@
+# == Schema Information
+# Schema version: 20110518210914
+#
+# Table name: users
+#
+#  id                     :integer         not null, primary key
+#  email                  :string(255)     default(""), not null
+#  encrypted_password     :string(128)     default(""), not null
+#  reset_password_token   :string(255)
+#  reset_password_sent_at :datetime
+#  remember_created_at    :datetime
+#  sign_in_count          :integer         default(0)
+#  current_sign_in_at     :datetime
+#  last_sign_in_at        :datetime
+#  current_sign_in_ip     :string(255)
+#  last_sign_in_ip        :string(255)
+#  username               :text
+#  mc_username            :text
+#  created_at             :datetime
+#  updated_at             :datetime
+#
+
 class User < ActiveRecord::Base
   has_many :servers
 
@@ -12,4 +34,6 @@ class User < ActiveRecord::Base
   #
   attr_accessible :email, :password, :password_confirmation,
                   :remember_me, :username, :mc_username
+                  
+  validates :username, :presence => true, :uniqueness => true
 end

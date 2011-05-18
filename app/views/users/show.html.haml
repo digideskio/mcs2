@@ -4,9 +4,12 @@
   %p
     Email (not shown publically): 
     =@user.email
-%p
-  Minecraft Username:
-  =@user.mc_username   
+-if !@user.mc_username.nil? and !@user.mc_username.blank?
+  %p
+    Minecraft Username:
+    =@user.mc_username
+- else
+  %p Empty profile...
 -if me
   %br
   =link_to "Edit Information", edit_user_registration_path

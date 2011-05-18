@@ -10,13 +10,13 @@
           %span.servername
             =link_to server.name, server
           %b
-            A
-            = server.game_mode
+            =a_or_an game_mode_to_s server.game_mode
             server.
         %span.serverright
-          %b
-            website:
-          = link_to server.website, server.website, :target => "_blank"
+          -if !server.website.nil? and !server.website.blank?
+            %b
+              website:
+            = link_to server.website, server.website, :target => "_blank"
           %br
           %b
             Description:
