@@ -17,7 +17,10 @@
         %nav
           %ul
             %li
-              =link_to "Home", root_path
+              -if user_signed_in?
+                =link_to current_user.username, current_user
+              -else
+                =link_to "Home", root_path
             %li
               -if user_signed_in?
                 =link_to "User list", users_path

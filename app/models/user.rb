@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_many :servers
+
   # Other modules:
   # :token_authenticatable, :encryptable, :confirmable, :lockable,
   # :timeoutable and :omniauthable
