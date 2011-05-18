@@ -2,6 +2,6 @@
 
 = render 'form'
 
-= link_to 'Show', @server
-\|
-= link_to 'Back', servers_path
+%br
+
+=button_to "Delete Server", server_path(@server), :method => :delete

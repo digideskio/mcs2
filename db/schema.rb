@@ -10,11 +10,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110517210146) do
+ActiveRecord::Schema.define(:version => 20110517215858) do
 
   create_table "servers", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
+    t.string   "website"
+    t.text     "description"
+    t.string   "mc_server_address"
+    t.string   "location"
+    t.integer  "game_mode"
+    t.string   "whitelist_url"
+    t.integer  "port"
+    t.boolean  "status"
   end
 
   create_table "users", :force => true do |t|

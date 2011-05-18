@@ -1,4 +1,6 @@
 class ServersController < ApplicationController
+  before_filter :authenticate_user!, :except => [:index, :show]
+  
   # GET /servers
   # GET /servers.xml
   def index
