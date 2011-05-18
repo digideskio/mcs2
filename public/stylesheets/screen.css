@@ -331,17 +331,17 @@ body #container {
   *zoom: 1;
 }
 /* line 31, ../../app/stylesheets/screen.scss */
-body #header #title, body #footer #title {
+body #header #title {
   font-size: 5em;
   font-family: 'cabin sketch';
   line-height: 1em;
 }
 /* line 32, ../../app/stylesheets/screen.scss */
-body #header #title a, body #footer #title a {
+body #header #title a {
   color: #464646;
 }
 /* line 37, ../../app/stylesheets/screen.scss */
-body #header nav, body #footer nav {
+body #header nav {
   display: inline;
   float: right;
   background: none;
@@ -349,36 +349,37 @@ body #header nav, body #footer nav {
   font-family: 'VT323';
 }
 /* line 43, ../../app/stylesheets/screen.scss */
-body #header nav ul, body #footer nav ul {
+body #header nav ul {
   float: right;
 }
 /* line 44, ../../app/stylesheets/screen.scss */
-body #header nav .alert, body #footer nav .alert {
+body #header nav .alert {
   float: right;
   background: #fff6bf;
   padding: 0px 20px 0px 20px;
 }
 /* line 49, ../../app/stylesheets/screen.scss */
-body #header nav .notice, body #footer nav .notice {
+body #header nav .notice {
   float: right;
   background: #e6efc2;
 }
 /* line 53, ../../app/stylesheets/screen.scss */
-body #header nav ul, body #footer nav ul {
+body #header nav ul {
   display: inline;
   margin: 0px;
   padding: 0px;
 }
 /* line 57, ../../app/stylesheets/screen.scss */
-body #header nav ul li, body #footer nav ul li {
+body #header nav ul li {
   padding: 0px;
   display: inline;
 }
 /* line 64, ../../app/stylesheets/screen.scss */
 body #content {
   clear: both;
+  margin-bottom: 20px;
 }
-/* line 67, ../../app/stylesheets/screen.scss */
+/* line 68, ../../app/stylesheets/screen.scss */
 body #content .userforms {
   display: inline;
   float: left;
@@ -456,15 +457,15 @@ body #content .userforms textarea {
 * html body #content .userforms {
   overflow-x: hidden;
 }
-/* line 74, ../../app/stylesheets/screen.scss */
+/* line 75, ../../app/stylesheets/screen.scss */
 body #content .userforms h1 {
   color: #fAFAFA;
 }
-/* line 75, ../../app/stylesheets/screen.scss */
+/* line 76, ../../app/stylesheets/screen.scss */
 body #content .userforms a {
   color: #F0F0F0;
 }
-/* line 77, ../../app/stylesheets/screen.scss */
+/* line 78, ../../app/stylesheets/screen.scss */
 body #content #serverlist {
   border-width: 1px 1px 1px 1px;
   border-color: black;
@@ -472,7 +473,7 @@ body #content #serverlist {
   background: url('/images/trans.png?1305402372');
   width: 870px -2;
 }
-/* line 83, ../../app/stylesheets/screen.scss */
+/* line 84, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters {
   padding: 20px;
   background: #464646;
@@ -480,11 +481,11 @@ body #content #serverlist #serverfilters {
   font-size: 1.5em;
   color: white;
 }
-/* line 89, ../../app/stylesheets/screen.scss */
+/* line 90, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters a {
   color: white;
 }
-/* line 91, ../../app/stylesheets/screen.scss */
+/* line 92, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server {
   display: inline;
   float: left;
@@ -502,7 +503,15 @@ body #content #serverlist .server {
 * html body #content #serverlist .server {
   overflow-x: hidden;
 }
-/* line 100, ../../app/stylesheets/screen.scss */
+/* line 101, ../../app/stylesheets/screen.scss */
+body #content #serverlist .server:hover {
+  background: #464646;
+}
+/* line 103, ../../app/stylesheets/screen.scss */
+body #content #serverlist .server:hover a {
+  color: white;
+}
+/* line 105, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server .serverleft {
   display: inline;
   float: left;
@@ -513,21 +522,22 @@ body #content #serverlist .server .serverleft {
 * html body #content #serverlist .server .serverleft {
   overflow-x: hidden;
 }
-/* line 102, ../../app/stylesheets/screen.scss */
+/* line 107, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server .serverleft span {
   display: block;
   clear: both;
   padding: 0px;
   margin: 0px;
 }
-/* line 108, ../../app/stylesheets/screen.scss */
+/* line 113, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server .serverleft .servername {
+  white-space: nowrap;
   font-family: 'Neuton';
   font-size: 2.5em;
   font-padding: 0px;
   margin: -5px 0px -2px 0px;
 }
-/* line 115, ../../app/stylesheets/screen.scss */
+/* line 121, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server .serverright {
   padding-top: 5px;
   line-height: 1em;
@@ -540,7 +550,7 @@ body #content #serverlist .server .serverright {
 * html body #content #serverlist .server .serverright {
   overflow-x: hidden;
 }
-/* line 122, ../../app/stylesheets/screen.scss */
+/* line 128, ../../app/stylesheets/screen.scss */
 body #content #userlist {
   border-width: 1px 1px 1px 1px;
   border-color: black;
@@ -548,7 +558,7 @@ body #content #userlist {
   background: url('/images/trans.png?1305402372');
   width: 870px -2;
 }
-/* line 128, ../../app/stylesheets/screen.scss */
+/* line 134, ../../app/stylesheets/screen.scss */
 body #content #userlist #userfilters {
   padding: 20px;
   background: #464646;
@@ -556,11 +566,11 @@ body #content #userlist #userfilters {
   font-size: 1.5em;
   color: white;
 }
-/* line 134, ../../app/stylesheets/screen.scss */
+/* line 140, ../../app/stylesheets/screen.scss */
 body #content #userlist #userfilters a {
   color: white;
 }
-/* line 136, ../../app/stylesheets/screen.scss */
+/* line 142, ../../app/stylesheets/screen.scss */
 body #content #userlist .user {
   display: inline;
   float: left;
@@ -576,6 +586,19 @@ body #content #userlist .user {
 }
 /* line 147, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body #content #userlist .user {
+  overflow-x: hidden;
+}
+/* line 156, ../../app/stylesheets/screen.scss */
+body #footer {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+  height: 200px;
+  background: #464646;
+}
+/* line 147, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body #footer {
   overflow-x: hidden;
 }
 

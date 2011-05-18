@@ -27,7 +27,7 @@ body {
   #container {
     @include container;
   }
-  #header, #footer {
+  #header {
     #title {
       a { color:#464646; }
       font-size:5em;
@@ -64,6 +64,7 @@ body {
   #content {
     clear:both;
     $content-columns: 24;
+    margin-bottom:20px;
     .userforms {
         @include blueprint-form;
         @include column(23);
@@ -97,6 +98,10 @@ body {
       	display: block;
       	text-decoration: none;
       	padding-left:30px;
+      	&:hover {
+      	  background:#464646;
+      	  a { color: white; }
+      	}
       	.serverleft {
       	  @include column(9);
       	  span {
@@ -106,6 +111,7 @@ body {
       	    margin:0px;
       	  }
       	  .servername { 
+      	    white-space:nowrap;
       	    font-family:'Neuton';
             font-size:2.5em;
             font-padding:0px;
@@ -147,6 +153,12 @@ body {
       
     }
   } 
+  #footer {
+    @include column(24);
+    height:200px;
+    background:#464646;
+
+  }
 }
 
 form.bp {
