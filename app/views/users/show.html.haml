@@ -1,13 +1,2 @@
-%h1= @user.username
--me = @user == current_user
--if me
-  %p
-    Email: 
-    =@user.email
-%p
-  Minecraft Username:
-  =@user.mc_username   
--if me
-  %br
-  =link_to "Edit Information", edit_user_registration_path
-
+%h1 Users#show
+%p Find me in app/views/users/show.html.haml

@@ -1,11 +1,18 @@
 %h1 Listing servers
+%p Hi i am text.<br> I'm na new line.'
 
--if user_signed_in?
-  = link_to 'New Server', new_server_path
+%table
+  %tr
+    %th
+    %th
+    %th
 
-%ul
   - @servers.each do |server|
-    %li
-      = link_to server.name, server
+    %tr
+      %td= link_to 'Show', server
+      %td= link_to 'Edit', edit_server_path(server)
+      %td= link_to 'Destroy', server, :confirm => 'Are you sure?', :method => :delete
 
+%br
 
+= link_to 'New Server', new_server_path
