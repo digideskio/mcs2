@@ -12,7 +12,8 @@
   %body
     #container
       #header
-        %span#title Minecraft Server Corp
+        %span#title
+          =link_to "Minecraft Server Corp", root_path
         %nav
           %ul
             %li
@@ -27,11 +28,11 @@
                 =link_to "Logout", destroy_user_session_path
               -else
                 =link_to "Login", new_user_session_path
-          %span.notifications
-            %span.notice.removed
-              =notice
-            %span.alert.removed
-              =alert
+        %span.notifications
+          %span.notice.removed
+            =notice
+          %span.alert.removed
+            =alert
       
       #content
         =yield
