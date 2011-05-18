@@ -9,9 +9,14 @@
         %span.serverleft
           %span.servername
             =link_to server.name, server
-          %span Server info here
         %span.serverright
-          just some text
+          %b
+            website:
+          = link_to server.website, server.website, :target => "_blank"
+          %br
+          %b
+            Description:
+          = server.description
           =server.name
   %br.clearboth
 
