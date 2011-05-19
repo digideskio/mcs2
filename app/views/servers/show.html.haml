@@ -1,40 +1,44 @@
-%h1=@server.name
+%div#showserver
+  %div.header
+    %div#servertitle
+      %h1=@server.name
+    %span#serverauthor
+      %b
+        submitted by: 
+      =link_to @server.user.username, @server.user
+    %span#serverhttp
+      %b
+        Website:
+      = @server.website
+    %span#serverip
+      %b
+        Server Address:
+      = @server.mc_server_address
+      
+      = @server.port
+    %span#gamemode
+      %b
+        Game Type:
+      = game_mode_to_s @server.game_mode
+    %span#location
+      %b
+        Location:
+      = @server.location
 
-.server-content
-%p
-  submitted by: 
-  =link_to @server.user.username, @server.user
-
-%p
-  Server Address:
-  = @server.mc_server_address
-
-%p
-  Port:
-  = @server.port
-
-%p
-  Description:
-  = h(@server.description).gsub(/\n/, '<br />')
-  
--if !@server.location.nil? and !@server.location.blank?
   %p
-    Location:
-    = @server.location
+    Description:
+    = h(@server.description).gsub(/\n/, '<br />')
+    
+  -if !@server.location.nil? and !@server.location.blank?
+    %p
+      Location:
+      = @server.location
 
-%p
-  Game Mode:
-  = game_mode_to_s @server.game_mode
 
--if !@server.website.nil? and !@server.website.blank?
-  %p
-    Website:
-    = @server.website
+  -if !@server.whitelist_url.nil? and !@server.whitelist_url.blank?
+    %p
+      Whitelist URL:
+      = @server.whitelist_url
 
--if !@server.whitelist_url.nil? and !@server.whitelist_url.blank?
-  %p
-    Whitelist URL:
-    = @server.whitelist_url
-
-- if can? :update, @server
-  = link_to 'Edit', edit_server_path(@server)
+  - if can? :update, @server
+    = link_to 'Edit', edit_server_path(@server)

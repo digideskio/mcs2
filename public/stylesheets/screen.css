@@ -582,7 +582,36 @@ body #content #userlist .user {
 * html body #content #userlist .user {
   overflow-x: hidden;
 }
-/* line 156, ../../app/stylesheets/screen.scss */
+/* line 154, ../../app/stylesheets/screen.scss */
+body #content #showserver {
+  background: #464646;
+  padding: 20px;
+}
+/* line 157, ../../app/stylesheets/screen.scss */
+body #content #showserver .header {
+  background: #F0DA34;
+  padding: 10px;
+}
+/* line 160, ../../app/stylesheets/screen.scss */
+body #content #showserver .header #servertitle {
+  padding-right: 20px;
+  float: left;
+  display: inline;
+}
+/* line 161, ../../app/stylesheets/screen.scss */
+body #content #showserver .header #servertitle h1 {
+  font-family: 'Neutron';
+  color: white;
+  margin: 0px;
+  display: inline;
+}
+/* line 171, ../../app/stylesheets/screen.scss */
+body #content #showserver .header span {
+  background: black;
+  color: white;
+  padding: 2px;
+}
+/* line 181, ../../app/stylesheets/screen.scss */
 body #footer {
   display: inline;
   float: left;
