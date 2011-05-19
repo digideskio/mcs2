@@ -104,19 +104,19 @@ body {
       	}
       	.serverleft {
       	  @include column(9);
+      	  height:100%;
       	  span {
-      	    display:block;
-      	    clear:both;
-      	    padding:0px;
-      	    margin:0px;
+  //    	    padding:0px;
+   //   	    margin:0px;
       	  }
       	  .servername { 
-      	    white-space:nowrap;
-      	    font-family:'Neuton';
-            font-size:2.5em;
-            font-padding:0px;
-            margin:-5px 0px -2px 0px;
+            font-size:20px;
+            display:block;
+            margin-bottom:-10px;
+            font-family:'Neutron';
+            word-spacing:-5px;
       	  }
+
       	}
       	.serverright {
       	  padding-top:5px;
