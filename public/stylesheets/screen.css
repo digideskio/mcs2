@@ -552,10 +552,10 @@ body #content #serverlist .server .serverleft {
 }
 /* line 137, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server .serverleft .servername {
-  font-size: 20px;
+  font-size: 25px;
   display: block;
   margin-bottom: -10px;
-  font-family: 'Neutron';
+  font-family: 'play';
   word-spacing: -5px;
 }
 /* line 146, ../../app/stylesheets/screen.scss */
