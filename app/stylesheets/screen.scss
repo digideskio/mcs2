@@ -23,13 +23,18 @@ body {
     
   }
   br.clearboth { clear:both; }
+  hr {
+    border-color:#4e4e4e;
+    background:#4e4e4e; 
+    opacity:.4;   
+  }
 
   #container {
     @include container;
   }
   #header {
     #title {
-      a { color:#464646; }
+      a { color:#4e4e4e; }
       font-size:5em;
       font-family:'cabin sketch';
       line-height:1em;
@@ -41,15 +46,6 @@ body {
       font-size:2.5em;
       font-family:'VT323';
       ul { float:right; }
-      .alert {
-        float:right;
-        background:#fff6bf;
-        padding:0px 20px 0px 20px;
-      }
-      .notice {
-        float:right;
-        background:#e6efc2;
-      }
       ul {
         display:inline;
         margin:0px;
@@ -61,6 +57,35 @@ body {
       }
     }
   }
+  #notifications {
+    .info, .success, .warning, .error, .validation {
+      border: 1px solid;
+      margin: 10px 0px;
+      padding:15px 10px 15px 50px;
+      background-repeat: no-repeat;
+      background-position: 10px center;
+    }
+    .info {
+      color: #00529B;
+      background-color: #BDE5F8;
+      background-image: url('info.png');
+    }
+    .success {
+      color: #4F8A10;
+      background-color: #DFF2BF;
+      background-image:url('success.png');
+    }
+    .warning {
+      color: #9F6000;
+      background-color: #FEEFB3;
+      background-image: url('warning.png');
+    }
+    .error {
+      color: #D8000C;
+      background-color: #FFBABA;
+      background-image: url('error.png');
+    }
+  }
   #content {
     clear:both;
     $content-columns: 24;
@@ -70,7 +95,7 @@ body {
         @include column(23);
         padding:30px 0px 50px ($blueprint-grid-outer-width * 8);
         border:1px solid black;
-        background:#464646;
+        background:#4e4e4e;
         color:white;
         h1 { color: #fAFAFA; }
         a { color: #F0F0F0; }
@@ -83,7 +108,7 @@ body {
 	    width:span(22)-2;
 	    #serverfilters {
 	      padding:20px;
-	      background:#464646;
+	      background:#4e4e4e;
 	      height:70px;
 	      font-size:1.5em;
 	      color: white;
@@ -91,7 +116,7 @@ body {
 	    }
 	    .server {
 	      @include column(23);
-      	border-bottom:4px solid #464646;	
+      	border-bottom:4px solid #4e4e4e;	
       	height: 60px;
       	color:black;
       	background:image-url("trans.png");
@@ -99,7 +124,7 @@ body {
       	text-decoration: none;
       	padding-left:30px;
       	&:hover {
-      	  background:#464646;
+      	  background:#4e4e4e;
       	  a { color: white; }
       	}
       	.serverleft {
@@ -133,7 +158,7 @@ body {
 	    width:span(22)-2;
 	    #userfilters {
 	      padding:20px;
-	      background:#464646;
+	      background:#4e4e4e;
 	      height:70px;
 	      font-size:1.5em;
 	      color: white;
@@ -141,7 +166,7 @@ body {
 	    }
       .user {
 	      @include column(23);
-      	border-bottom:4px solid #464646;	
+      	border-bottom:4px solid #4e4e4e;	
       	height: 40px;
       	color:black;
       	background:image-url("trans.png");
@@ -152,36 +177,77 @@ body {
       } 
     }
     #showserver {
-      background:#464646;
-      padding: 20px;
+      padding: 0px 00px;
       .header {
-        background:#F0DA34;
-        padding:10px;
+        padding:0px 0px;
         #servertitle {
-          h1 {
-            font-family:'Neutron';
-            color:white;
-            margin:0px;
-            display:inline;
+          div {
+            line-height:60px;
+            font-size:60px;
+            font-family:'play';
+            color:black;
+            padding:-20px 0px -50px 0px;
+
+            border-top-left-radius:10px;
+            border-top-right-radius:10px;
+            padding-left: 20px;
+             
           }
-          padding-right: 20px;
-          float:left;
-          display:inline;
-        }
-        span {
-          background:black;
-          color:white;
-          padding:2px;
+
 
         }
-        
       }
-     }
+      #serverbody {
+        padding:20px;
+        background:image-url('trans.png');
+        width:890px;
+        border:2px solid #6a7987;
+        #servercontent {
+          width:570px;
+          float:left;
+          #serverdetails {
+            border-bottom:5px solid #4d6a85;
+            margin-bottom:20px;
+            padding:10px;
+            font-size:20px;
+            background:image-url("trans.png");
+          }
+          #serveractions {
+            border-left:5px solid #333;
+            padding:10px;
+            font-size:20px;
+            font-weight:bold;
+            width:570px;
+            float:left;
+          }
+        }
+        #serverinfo {
+          float:right;
+          width:250px;
+          border-top-left-radius:15px;
+          border-bottom-left-radius:15px;
+          font-size:20px;
+          #serverinfo-title {
+            text-align:center;
+          }
+          hr { margin:4px; }
+          .serverinfo-field {
+            background:image-url("trans.png");
+            font-size:20px;
+            padding-left:10px;
+            text-indent:-10px;
+            line-height:20px;
+            b { color:black; font-size:15px; }
+            
+          }
+        }
+      }
+    }
   } 
   #footer {
     @include column(24);
     height:200px;
-    background:#464646;
+    background:#4e4e4e;
 
   }
 }

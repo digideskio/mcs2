@@ -1,44 +1,64 @@
+
 %div#showserver
   %div.header
     %div#servertitle
-      %h1=@server.name
-    %span#serverauthor
-      %b
-        submitted by: 
-      =link_to @server.user.username, @server.user
-    %span#serverhttp
-      %b
-        Website:
-      = @server.website
-    %span#serverip
-      %b
-        Server Address:
-      = @server.mc_server_address
-      
-      = @server.port
-    %span#gamemode
-      %b
-        Game Type:
-      = game_mode_to_s @server.game_mode
-    %span#location
-      %b
-        Location:
-      = @server.location
-
-  %p
-    Description:
-    = h(@server.description).gsub(/\n/, '<br />')
-    
-  -if !@server.location.nil? and !@server.location.blank?
-    %p
-      Location:
-      = @server.location
-
-
-  -if !@server.whitelist_url.nil? and !@server.whitelist_url.blank?
-    %p
-      Whitelist URL:
-      = @server.whitelist_url
-
-  - if can? :update, @server
-    = link_to 'Edit', edit_server_path(@server)
+      %div=@server.name
+  %div#serverbody
+    %div#servercontent
+      %div#serverdetails
+        = @server.description
+        %hr
+        This is
+        %b
+          = a_or_an game_mode_to_s @server.game_mode
+        server.
+        - if !@server.location.nil? && !@server.location.blank?
+          Its located in
+          %b
+            %span>= @server.location
+          %span{:style => "display:none;"}> -# Used to eliminate white space after ruby code
+          , 
+        and
+        %b
+          does
+          - if @server.whitelist_url.nil? || @server.whitelist_url.blank?
+            not
+        require players to be whitelisted.
+        
+      %div#serveractions
+        %ul
+          %li
+            Server announced on
+            = @server.created_at
+    %div#serverinfo
+      %div#serverinfo-title
+        Server Basics
+      %hr
+      %div.serverinfo-field
+        %b
+          Website:
+        %br
+        = link_to @server.website, @server.website, :target => "_blank"
+      %div.serverinfo-field
+        %b
+          Server IP:
+        %br
+        = @server.mc_server_address
+      %div.serverinfo-field
+        %b
+          Port:
+        %br
+        = @server.port
+      %div.serverinfo-field
+        %b
+          Game Mode:
+        %br
+        = game_mode_to_s @server.game_mode
+      %div.serverinfo-field
+        %b
+          Website:
+        %br
+        = link_to @server.website, @server.website, :target => "_blank"
+    %br.clearboth
+- if can? :update, @server
+  = link_to 'Edit', edit_server_path(@server)
