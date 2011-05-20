@@ -21,7 +21,8 @@
 class Server < ActiveRecord::Base
   belongs_to :user
   
-  validates :name, :presence => true, :uniqueness => true, :format => /^[\w||'||.|| ||-||=||!||?||;||:]+$/i
+  validates :name, :presence => true, :uniqueness => true, :format => /^[\w||'||.|| ||-||=||!||?||;||:]+$/i,
+            :length => { :maximum => 35 }
   validates :description, :presence => true
   validates :mc_server_address, :presence => true, :uniqueness => true
   validates :port, :presence => true, :numericality => true
