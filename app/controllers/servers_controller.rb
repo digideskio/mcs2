@@ -6,7 +6,7 @@ class ServersController < ApplicationController
   # GET /servers
   # GET /servers.xml
   def index
-    @servers = Server.all
+    @servers = Server.paginate(:page => params[:page])
 
     respond_to do |format|
       format.html # index.html.erb

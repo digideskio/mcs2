@@ -30,6 +30,7 @@
           %b
             Description:
           = truncate(server.description,:length => 250, :separator => " ", :omission => "....")
+    = will_paginate @servers
   %br.clearboth
 
 

@@ -10,6 +10,7 @@ gem 'therubyracer', :require => nil
 gem 'jquery-rails'
 gem "compass", ">= 0.11.1"
 gem 'haml-rails'
+gem "will_paginate", "~>3.0.pre"
 
 group :development do
   gem 'annotate-models'
