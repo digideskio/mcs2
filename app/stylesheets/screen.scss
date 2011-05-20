@@ -258,6 +258,7 @@ body {
         padding:0px 0px;
         #servertitle {
           div {
+            word-wrap:break-word;
             line-height:60px;
             font-size:60px;
             font-family:'play';
@@ -307,9 +308,8 @@ body {
           }
           hr { margin:4px; }
           .serverinfo-field {
-            a { width:42px; }
+            word-wrap:break-word;
             background:image-url("trans.png");
-            width:42px;
             font-size:20px;
             padding-left:10px;
             text-indent:-10px;

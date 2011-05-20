@@ -746,6 +746,7 @@ body #content #showserver .header {
 }
 /* line 260, ../../app/stylesheets/screen.scss */
 body #content #showserver .header #servertitle div {
+  word-wrap: break-word;
   line-height: 60px;
   font-size: 60px;
   font-family: 'play';
@@ -755,19 +756,19 @@ body #content #showserver .header #servertitle div {
   border-top-right-radius: 10px;
   padding-left: 20px;
 }
-/* line 275, ../../app/stylesheets/screen.scss */
+/* line 276, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody {
   padding: 20px;
   background: url('/images/trans.png?1305402372');
   width: 890px;
   border: 2px solid #6a7987;
 }
-/* line 280, ../../app/stylesheets/screen.scss */
+/* line 281, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #servercontent {
   width: 570px;
   float: left;
 }
-/* line 283, ../../app/stylesheets/screen.scss */
+/* line 284, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #servercontent #serverdetails {
   border-bottom: 5px solid #4d6a85;
   margin-bottom: 20px;
@@ -775,7 +776,7 @@ body #content #showserver #serverbody #servercontent #serverdetails {
   font-size: 20px;
   background: url('/images/trans.png?1305402372');
 }
-/* line 290, ../../app/stylesheets/screen.scss */
+/* line 291, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #servercontent #serveractions {
   border-left: 5px solid #333;
   padding: 10px;
@@ -784,7 +785,7 @@ body #content #showserver #serverbody #servercontent #serveractions {
   width: 570px;
   float: left;
 }
-/* line 299, ../../app/stylesheets/screen.scss */
+/* line 300, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo {
   float: right;
   width: 250px;
@@ -792,26 +793,22 @@ body #content #showserver #serverbody #serverinfo {
   border-bottom-left-radius: 15px;
   font-size: 20px;
 }
-/* line 305, ../../app/stylesheets/screen.scss */
+/* line 306, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo #serverinfo-title {
   text-align: center;
 }
-/* line 308, ../../app/stylesheets/screen.scss */
+/* line 309, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo hr {
   margin: 4px;
 }
-/* line 309, ../../app/stylesheets/screen.scss */
+/* line 310, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo .serverinfo-field {
+  word-wrap: break-word;
   background: url('/images/trans.png?1305402372');
-  width: 42px;
   font-size: 20px;
   padding-left: 10px;
   text-indent: -10px;
   line-height: 20px;
-}
-/* line 310, ../../app/stylesheets/screen.scss */
-body #content #showserver #serverbody #serverinfo .serverinfo-field a {
-  width: 42px;
 }
 /* line 317, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo .serverinfo-field b {
