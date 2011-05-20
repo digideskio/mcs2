@@ -338,7 +338,7 @@ body #container {
 }
 /* line 36, ../../app/stylesheets/screen.scss */
 body #header #title {
-  font-size: 5em;
+  font-size: 85px;
   font-family: 'cabin sketch';
   line-height: 1em;
 }
@@ -348,28 +348,38 @@ body #header #title a {
 }
 /* line 42, ../../app/stylesheets/screen.scss */
 body #header nav {
+  padding: 20px 0 0 0;
+  border-style: solid;
+  border-color: #9d9d9d;
+  text-align: right;
   display: inline;
   float: right;
-  background: none;
-  font-size: 2.5em;
-  font-family: 'VT323';
+  background: #6dbafb;
+  font-size: 20px;
+  height: 71px;
+  width: 106px;
 }
-/* line 48, ../../app/stylesheets/screen.scss */
+/* line 54, ../../app/stylesheets/screen.scss */
 body #header nav ul {
-  float: right;
-}
-/* line 49, ../../app/stylesheets/screen.scss */
-body #header nav ul {
-  display: inline;
   margin: 0px;
   padding: 0px;
 }
-/* line 53, ../../app/stylesheets/screen.scss */
+/* line 57, ../../app/stylesheets/screen.scss */
 body #header nav ul li {
-  padding: 0px;
-  display: inline;
+  list-style: none;
+  margin: 0px;
+  padding: 0 5px 0 0;
+  line-height: 20px;
 }
-/* line 61, ../../app/stylesheets/screen.scss */
+/* line 62, ../../app/stylesheets/screen.scss */
+body #header nav ul li:hover {
+  background: #b4d9f9;
+}
+/* line 64, ../../app/stylesheets/screen.scss */
+body #header nav ul li:hover a {
+  color: #06C;
+}
+/* line 71, ../../app/stylesheets/screen.scss */
 body #notifications .info, body #notifications .success, body #notifications .warning, body #notifications .error, body #notifications .validation {
   border: 1px solid;
   margin: 10px 0px;
@@ -377,36 +387,36 @@ body #notifications .info, body #notifications .success, body #notifications .wa
   background-repeat: no-repeat;
   background-position: 10px center;
 }
-/* line 68, ../../app/stylesheets/screen.scss */
+/* line 78, ../../app/stylesheets/screen.scss */
 body #notifications .info {
   color: #00529B;
   background-color: #BDE5F8;
   background-image: url("info.png");
 }
-/* line 73, ../../app/stylesheets/screen.scss */
+/* line 83, ../../app/stylesheets/screen.scss */
 body #notifications .success {
   color: #4F8A10;
   background-color: #DFF2BF;
   background-image: url("success.png");
 }
-/* line 78, ../../app/stylesheets/screen.scss */
+/* line 88, ../../app/stylesheets/screen.scss */
 body #notifications .warning {
   color: #9F6000;
   background-color: #FEEFB3;
   background-image: url("warning.png");
 }
-/* line 83, ../../app/stylesheets/screen.scss */
+/* line 93, ../../app/stylesheets/screen.scss */
 body #notifications .error {
   color: #D8000C;
   background-color: #FFBABA;
   background-image: url("error.png");
 }
-/* line 89, ../../app/stylesheets/screen.scss */
+/* line 99, ../../app/stylesheets/screen.scss */
 body #content {
   clear: both;
   margin-bottom: 20px;
 }
-/* line 93, ../../app/stylesheets/screen.scss */
+/* line 103, ../../app/stylesheets/screen.scss */
 body #content .userforms {
   display: inline;
   float: left;
@@ -484,40 +494,158 @@ body #content .userforms textarea {
 * html body #content .userforms {
   overflow-x: hidden;
 }
-/* line 100, ../../app/stylesheets/screen.scss */
+/* line 110, ../../app/stylesheets/screen.scss */
 body #content .userforms h1 {
   color: #fAFAFA;
 }
-/* line 101, ../../app/stylesheets/screen.scss */
+/* line 111, ../../app/stylesheets/screen.scss */
 body #content .userforms a {
   color: #F0F0F0;
 }
-/* line 103, ../../app/stylesheets/screen.scss */
+/* line 113, ../../app/stylesheets/screen.scss */
 body #content #serverlist {
-  border-width: 1px 1px 1px 1px;
-  border-color: black;
+  border-width: 2px;
+  border-color: #4e4e4e;
   border-style: solid;
   background: url('/images/trans.png?1305402372');
-  width: 870px -2;
+  width: 100% -2px;
 }
-/* line 109, ../../app/stylesheets/screen.scss */
+/* line 119, ../../app/stylesheets/screen.scss */
+body #content #serverlist ul {
+  padding: 0px;
+}
+/* line 120, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters {
-  padding: 20px;
   background: #4e4e4e;
-  height: 70px;
+  font-size: 30px;
+  color: black;
+}
+/* line 18, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+body #content #serverlist #serverfilters label {
+  font-weight: bold;
+}
+/* line 19, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+body #content #serverlist #serverfilters fieldset {
+  padding: 1.4em;
+  margin: 0 0 1.5em 0;
+}
+/* line 20, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+body #content #serverlist #serverfilters legend {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+/* line 26, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+body #content #serverlist #serverfilters input.text, body #content #serverlist #serverfilters input.title, body #content #serverlist #serverfilters input[type=email], body #content #serverlist #serverfilters input[type=text], body #content #serverlist #serverfilters input[type=password] {
+  margin: 0.5em 0;
+  background-color: white;
+  padding: 5px;
+}
+/* line 27, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+body #content #serverlist #serverfilters input.title {
   font-size: 1.5em;
-  color: white;
 }
-/* line 115, ../../app/stylesheets/screen.scss */
+/* line 29, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+body #content #serverlist #serverfilters textarea {
+  margin: 0.5em 0;
+  padding: 5px;
+}
+/* line 30, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+body #content #serverlist #serverfilters select {
+  margin: 0.5em 0;
+}
+/* line 55, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+body #content #serverlist #serverfilters fieldset {
+  border: 1px solid #cccccc;
+}
+/* line 58, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+body #content #serverlist #serverfilters input.text, body #content #serverlist #serverfilters input.title, body #content #serverlist #serverfilters input[type=email], body #content #serverlist #serverfilters input[type=text], body #content #serverlist #serverfilters input[type=password], body #content #serverlist #serverfilters textarea {
+  background-color: #fff;
+  border: 1px solid #bbbbbb;
+}
+/* line 61, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+body #content #serverlist #serverfilters input.text:focus, body #content #serverlist #serverfilters input.title:focus, body #content #serverlist #serverfilters input[type=email]:focus, body #content #serverlist #serverfilters input[type=text]:focus, body #content #serverlist #serverfilters input[type=password]:focus, body #content #serverlist #serverfilters textarea:focus {
+  border: 1px solid #666666;
+}
+/* line 65, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+body #content #serverlist #serverfilters select {
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+}
+/* line 44, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+body #content #serverlist #serverfilters input.text, body #content #serverlist #serverfilters input.title, body #content #serverlist #serverfilters input[type=email], body #content #serverlist #serverfilters input[type=text], body #content #serverlist #serverfilters input[type=password] {
+  width: 300px;
+}
+/* line 46, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+body #content #serverlist #serverfilters textarea {
+  width: 390px;
+  height: 250px;
+}
+/* line 125, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters a {
-  color: white;
+  color: black;
 }
-/* line 117, ../../app/stylesheets/screen.scss */
-body #content #serverlist .server {
-  display: inline;
+/* line 126, ../../app/stylesheets/screen.scss */
+body #content #serverlist #serverfilters #serverfunctions {
   float: left;
-  margin-right: 10px;
-  width: 910px;
+  background: url('/images/trans.png?1305402372');
+  width: 300px;
+  font-family: 'cabin sketch';
+}
+/* line 131, ../../app/stylesheets/screen.scss */
+body #content #serverlist #serverfilters #serverfunctions ul {
+  padding: 10px 0px 0px 0px;
+  border-width: 0 1px 1px 0;
+  border-style: solid;
+  border-color: #657d96;
+  margin-right: 0px;
+  margin-bottom: 20px;
+}
+/* line 139, ../../app/stylesheets/screen.scss */
+body #content #serverlist #serverfilters #serverfunctions li {
+  padding-left: 30px;
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: #657d96;
+  margin: 0px;
+  width: 100% -30px;
+}
+/* line 146, ../../app/stylesheets/screen.scss */
+body #content #serverlist #serverfilters #serverfunctions li:hover {
+  background: url('/images/trans.png?1305402372');
+}
+/* line 149, ../../app/stylesheets/screen.scss */
+body #content #serverlist #serverfilters #serverfunctions li input {
+  margin: 5px;
+  width: 230px;
+  background: #abc2d9;
+  font-size: 20px;
+  border: 1px solid #657d96;
+}
+/* line 158, ../../app/stylesheets/screen.scss */
+body #content #serverlist #serverfilters #serverheader {
+  float: right;
+  background: url('/images/trans.png?1305402372');
+  width: 643px;
+  font-size: 15px;
+  padding: 10px 0 15px 0;
+  height: 101px;
+}
+/* line 166, ../../app/stylesheets/screen.scss */
+body #content #serverlist #serverfilters #serverheader div {
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  border-color: #657d96;
+  padding: 10px;
+}
+/* line 174, ../../app/stylesheets/screen.scss */
+body #content #serverlist #serverlist-ul {
+  border-top: 4px solid #4e4e4e;
+  width: 100%;
+}
+/* line 175, ../../app/stylesheets/screen.scss */
+body #content #serverlist .server {
+  width: 100%;
   border-bottom: 4px solid #4e4e4e;
   height: 60px;
   color: black;
@@ -526,19 +654,11 @@ body #content #serverlist .server {
   text-decoration: none;
   padding-left: 30px;
 }
-/* line 147, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body #content #serverlist .server {
-  overflow-x: hidden;
-}
-/* line 126, ../../app/stylesheets/screen.scss */
+/* line 184, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server:hover {
-  background: #4e4e4e;
+  background: #8db6dc;
 }
-/* line 128, ../../app/stylesheets/screen.scss */
-body #content #serverlist .server:hover a {
-  color: white;
-}
-/* line 130, ../../app/stylesheets/screen.scss */
+/* line 187, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server .serverleft {
   display: inline;
   float: left;
@@ -550,7 +670,7 @@ body #content #serverlist .server .serverleft {
 * html body #content #serverlist .server .serverleft {
   overflow-x: hidden;
 }
-/* line 137, ../../app/stylesheets/screen.scss */
+/* line 190, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server .serverleft .servername {
   font-size: 25px;
   display: block;
@@ -558,7 +678,7 @@ body #content #serverlist .server .serverleft .servername {
   font-family: 'play';
   word-spacing: -5px;
 }
-/* line 146, ../../app/stylesheets/screen.scss */
+/* line 199, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server .serverright {
   padding-top: 5px;
   line-height: 1em;
@@ -571,7 +691,7 @@ body #content #serverlist .server .serverright {
 * html body #content #serverlist .server .serverright {
   overflow-x: hidden;
 }
-/* line 153, ../../app/stylesheets/screen.scss */
+/* line 206, ../../app/stylesheets/screen.scss */
 body #content #userlist {
   border-width: 1px 1px 1px 1px;
   border-color: black;
@@ -579,7 +699,7 @@ body #content #userlist {
   background: url('/images/trans.png?1305402372');
   width: 870px -2;
 }
-/* line 159, ../../app/stylesheets/screen.scss */
+/* line 212, ../../app/stylesheets/screen.scss */
 body #content #userlist #userfilters {
   padding: 20px;
   background: #4e4e4e;
@@ -587,11 +707,11 @@ body #content #userlist #userfilters {
   font-size: 1.5em;
   color: white;
 }
-/* line 165, ../../app/stylesheets/screen.scss */
+/* line 218, ../../app/stylesheets/screen.scss */
 body #content #userlist #userfilters a {
   color: white;
 }
-/* line 167, ../../app/stylesheets/screen.scss */
+/* line 220, ../../app/stylesheets/screen.scss */
 body #content #userlist .user {
   display: inline;
   float: left;
@@ -609,15 +729,15 @@ body #content #userlist .user {
 * html body #content #userlist .user {
   overflow-x: hidden;
 }
-/* line 179, ../../app/stylesheets/screen.scss */
+/* line 232, ../../app/stylesheets/screen.scss */
 body #content #showserver {
   padding: 0px 00px;
 }
-/* line 181, ../../app/stylesheets/screen.scss */
+/* line 234, ../../app/stylesheets/screen.scss */
 body #content #showserver .header {
   padding: 0px 0px;
 }
-/* line 184, ../../app/stylesheets/screen.scss */
+/* line 237, ../../app/stylesheets/screen.scss */
 body #content #showserver .header #servertitle div {
   line-height: 60px;
   font-size: 60px;
@@ -628,19 +748,19 @@ body #content #showserver .header #servertitle div {
   border-top-right-radius: 10px;
   padding-left: 20px;
 }
-/* line 200, ../../app/stylesheets/screen.scss */
+/* line 253, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody {
   padding: 20px;
   background: url('/images/trans.png?1305402372');
   width: 890px;
   border: 2px solid #6a7987;
 }
-/* line 205, ../../app/stylesheets/screen.scss */
+/* line 258, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #servercontent {
   width: 570px;
   float: left;
 }
-/* line 208, ../../app/stylesheets/screen.scss */
+/* line 261, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #servercontent #serverdetails {
   border-bottom: 5px solid #4d6a85;
   margin-bottom: 20px;
@@ -648,7 +768,7 @@ body #content #showserver #serverbody #servercontent #serverdetails {
   font-size: 20px;
   background: url('/images/trans.png?1305402372');
 }
-/* line 215, ../../app/stylesheets/screen.scss */
+/* line 268, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #servercontent #serveractions {
   border-left: 5px solid #333;
   padding: 10px;
@@ -657,7 +777,7 @@ body #content #showserver #serverbody #servercontent #serveractions {
   width: 570px;
   float: left;
 }
-/* line 224, ../../app/stylesheets/screen.scss */
+/* line 277, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo {
   float: right;
   width: 250px;
@@ -665,15 +785,15 @@ body #content #showserver #serverbody #serverinfo {
   border-bottom-left-radius: 15px;
   font-size: 20px;
 }
-/* line 230, ../../app/stylesheets/screen.scss */
+/* line 283, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo #serverinfo-title {
   text-align: center;
 }
-/* line 233, ../../app/stylesheets/screen.scss */
+/* line 286, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo hr {
   margin: 4px;
 }
-/* line 234, ../../app/stylesheets/screen.scss */
+/* line 287, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo .serverinfo-field {
   background: url('/images/trans.png?1305402372');
   font-size: 20px;
@@ -681,12 +801,12 @@ body #content #showserver #serverbody #serverinfo .serverinfo-field {
   text-indent: -10px;
   line-height: 20px;
 }
-/* line 240, ../../app/stylesheets/screen.scss */
+/* line 293, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo .serverinfo-field b {
   color: black;
   font-size: 15px;
 }
-/* line 247, ../../app/stylesheets/screen.scss */
+/* line 300, ../../app/stylesheets/screen.scss */
 body #footer {
   display: inline;
   float: left;

@@ -1,11 +1,20 @@
 %div#serverlist
   %div#serverfilters
-    -if user_signed_in?
-      = link_to 'New Server', new_server_path
-
+    %div#serverfunctions
+      %ul
+        -if user_signed_in?
+          %li
+            = link_to 'Submit New Server', new_server_path
+        %li
+          %input{:type => "text", :value => "Search"}
+    %div#serverheader
+      %div
+        A bunch of text will go here for now.
+              
+    %br.clearboth
   %ul#serverlist-ul
     - @servers.each do |server|
-      %li.server
+      %li{:class => "server", :id => server.id }
         %span.serverleft
           %span.servername
             =link_to server.name, server
@@ -20,8 +29,7 @@
           %br
           %b
             Description:
-          = server.description
-          =server.name
+          = truncate(server.description,:length => 250, :separator => " ", :omission => "....")
   %br.clearboth
 
 

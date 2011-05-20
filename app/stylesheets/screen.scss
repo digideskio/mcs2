@@ -35,24 +35,34 @@ body {
   #header {
     #title {
       a { color:#4e4e4e; }
-      font-size:5em;
+      font-size:85px;
       font-family:'cabin sketch';
       line-height:1em;
     }
     nav {
+      padding:20px 0 0 0;
+      border-style:solid;
+      border-color:#9d9d9d;
+      text-align:right;
       display:inline;
       float:right;
-      background:none;
-      font-size:2.5em;
-      font-family:'VT323';
-      ul { float:right; }
+      background:#6dbafb;
+      font-size:20px;
+      height:71px;
+      width:106px;
+
       ul {
-        display:inline;
         margin:0px;
         padding:0px;
         li {
-        padding:0px;
-          display:inline;
+          list-style:none;
+          margin:0px;
+          padding:0 5px 0 0;
+          line-height:20px;
+          &:hover {
+            background:#b4d9f9;
+            a { color: #06C; }
+          }
         }
       }
     }
@@ -101,21 +111,69 @@ body {
         a { color: #F0F0F0; }
     }
     #serverlist {
-    	border-width: 1px 1px 1px 1px;
-    	border-color:black;
+    	border-width: 2px;
+    	border-color:#4e4e4e;
     	border-style:solid;
 	    background:image-url("trans.png");
-	    width:span(22)-2;
+	    width:100%-2px;
+      ul { padding:0px;}
 	    #serverfilters {
-	      padding:20px;
+	      @include blueprint-form;
 	      background:#4e4e4e;
-	      height:70px;
-	      font-size:1.5em;
-	      color: white;
-	      a { color:white; }
+	      font-size:30px;
+	      color: black;
+	      a { color:black; }
+	      #serverfunctions {
+	        float:left;
+	        background:image-url("trans.png");
+	        width:300px;
+	        font-family:'cabin sketch';
+	        ul {
+	          padding:10px 0px 0px 0px;
+	          border-width:0 1px 1px 0;
+	          border-style:solid;
+	          border-color:#657d96;
+	          margin-right:0px;
+	          margin-bottom:20px;
+	        }
+	        li {
+	          padding-left:30px;
+	          border-width:1px 0px 0px 0px;
+	          border-style:solid;
+	          border-color:#657d96;
+	          margin: 0px;
+	          width:100%-30px;
+	          &:hover {
+	            background:image-url("trans.png");  
+	          }
+	          input {
+	            margin:5px;
+	            width:230px;
+	            background:#abc2d9;
+	            font-size:20px;
+	            border:1px solid #657d96;
+	          }
+	        }
+	      }
+	      #serverheader {
+	        float:right;
+	        background:image-url("trans.png");
+	        width:643px;
+	        font-size:15px;
+	        padding:10px 0 15px 0;
+	        height:101px;
+
+	        div {
+	          border-width:1px 0 1px 0;
+	          border-style:solid;
+	          border-color: #657d96;
+	          padding:10px;
+	        }
+	      }
 	    }
+	    #serverlist-ul { border-top:4px solid #4e4e4e; width:100%; }
 	    .server {
-	      @include column(23);
+	      width:100%;
       	border-bottom:4px solid #4e4e4e;	
       	height: 60px;
       	color:black;
@@ -124,16 +182,11 @@ body {
       	text-decoration: none;
       	padding-left:30px;
       	&:hover {
-      	  background:#4e4e4e;
-      	  a { color: white; }
+      	  background:#8db6dc;
       	}
       	.serverleft {
       	  @include column(9);
       	  height:100%;
-      	  span {
-  //    	    padding:0px;
-   //   	    margin:0px;
-      	  }
       	  .servername { 
             font-size:25px;
             display:block;

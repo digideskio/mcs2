@@ -18,7 +18,9 @@
             %span>= @server.location
           %span{:style => "display:none;"}> -# Used to eliminate white space after ruby code
           , 
-        and
+          and
+        - else
+          It
         %b
           does
           - if @server.whitelist_url.nil? || @server.whitelist_url.blank?
@@ -54,11 +56,18 @@
           Game Mode:
         %br
         = game_mode_to_s @server.game_mode
-      %div.serverinfo-field
-        %b
-          Website:
-        %br
-        = link_to @server.website, @server.website, :target => "_blank"
+      - if !@server.whitelist_url.nil? || !@server.whitelist_url.blank?
+        %div.serverinfo-field
+          %b
+            Website:
+          %br
+          = link_to @server.website, @server.website, :target => "_blank"
+      - if !@server.location.nil? && !@server.location.blank?
+        %div.serverinfo-field
+          %b
+            Location:
+          %br
+          = @server.location
     %br.clearboth
 - if can? :update, @server
   = link_to 'Edit', edit_server_path(@server)
