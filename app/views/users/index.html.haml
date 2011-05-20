@@ -6,9 +6,9 @@
       %li{:class=>"user", :id => user.id} 
         %a{:href => user_path(user.id) }
           %div.userimg
-            fgfd
           %div.username
             = user.username
+  = will_paginate @users
           
 
   %br.clearboth
