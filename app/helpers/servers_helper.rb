@@ -1,5 +1,4 @@
 module ServersHelper
-
   def game_mode_to_s(game_mode)
     if game_mode == 0
       "Other"

@@ -36,11 +36,12 @@
       %div#serverinfo-title
         Server Basics
       %hr
-      %div.serverinfo-field
-        %b
-          Website:
-        %br
-        = link_to @server.website, @server.website, :target => "_blank"
+      - if !@server.website.nil? && !@server.website.blank?
+        %div.serverinfo-field
+          %b
+            Website:
+          %br
+          = link_to @server.website, @server.website, :target => "_blank"
       %div.serverinfo-field
         %b
           Server IP:
@@ -56,12 +57,12 @@
           Game Mode:
         %br
         = game_mode_to_s @server.game_mode
-      - if !@server.whitelist_url.nil? || !@server.whitelist_url.blank?
+      - if !@server.whitelist_url.nil? && !@server.whitelist_url.blank?
         %div.serverinfo-field
           %b
-            Website:
+            Whitelist URL:
           %br
-          = link_to @server.website, @server.website, :target => "_blank"
+          = link_to @server.whitelist_url, @server.whitelist_url, :target => "_blank"
       - if !@server.location.nil? && !@server.location.blank?
         %div.serverinfo-field
           %b
