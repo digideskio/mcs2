@@ -10,7 +10,13 @@ $(document).ready(function(){
   .click(function(e) {
       e.stopPropagation();
   });
-
+ $("ul#userlist-ul > li").click(function(e) {
+      window.location.href = 'users/'+$(this).attr("id");
+  })
+  .find("a")
+  .click(function(e) {
+      e.stopPropagation();
+  });
 
 
 });

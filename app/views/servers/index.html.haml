@@ -17,7 +17,7 @@
       %li{:class => "server", :id => server.id }
         %span.serverleft
           %span.servername
-            =link_to server.name, server
+            = link_to truncate(server.name,:length => 33), server
           %b
             =a_or_an game_mode_to_s server.game_mode
             server.

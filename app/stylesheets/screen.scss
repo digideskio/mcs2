@@ -185,30 +185,31 @@ body {
       	  background:#8db6dc;
       	}
       	.serverleft {
-      	  @include column(9);
+      	  float:left;
+          width:350px;
       	  height:100%;
       	  .servername { 
-            font-size:25px;
+            font-size:20px;
             display:block;
             margin-bottom:-10px;
             font-family:'play';
             word-spacing:-5px;
       	  }
-
       	}
       	.serverright {
+      	  width:550px;
       	  padding-top:5px;
       	  line-height:1em;
-      	  @include column(13);
+          float:right;
       	}
  	    }
 	  }
     #userlist {
-      border-width: 1px 1px 1px 1px;
-    	border-color:black;
+      border-width: 2px;
+    	border-color:#4e4e4e;
     	border-style:solid;
 	    background:image-url("trans.png");
-	    width:span(22)-2;
+	    width:100%-4px;
 	    #userfilters {
 	      padding:20px;
 	      background:#4e4e4e;
@@ -217,16 +218,38 @@ body {
 	      color: white;
 	      a { color:white; }
 	    }
+	    ul {
+	      border-top:5px solid #4e4e4e;
+	      width:100%;
+	      margin:0px;
+	      padding:0px;
+	    }
       .user {
-	      @include column(23);
+        width:100%;
       	border-bottom:4px solid #4e4e4e;	
       	height: 40px;
       	color:black;
       	background:image-url("trans.png");
       	display: block;
       	text-decoration: none;
-      	margin-left:30px;
-        
+      	padding:0 20px 0 30px;
+      	div {
+      	  display:inline;
+      	  
+      	}
+      	.userimg {
+      	  width:40px;
+      	  height:40px;
+      	  padding:5px;
+      	}
+      	.username {
+      	  height:40px;
+          padding:10px;
+          font-size:20px;
+          line-height:15px;
+          padding:10px;
+          margin:0px;
+        }
       } 
     }
     #showserver {
@@ -240,7 +263,6 @@ body {
             font-family:'play';
             color:black;
             padding:-20px 0px -50px 0px;
-
             border-top-left-radius:10px;
             border-top-right-radius:10px;
             padding-left: 20px;
@@ -285,7 +307,9 @@ body {
           }
           hr { margin:4px; }
           .serverinfo-field {
+            a { width:42px; }
             background:image-url("trans.png");
+            width:42px;
             font-size:20px;
             padding-left:10px;
             text-indent:-10px;
@@ -305,6 +329,3 @@ body {
   }
 }
 
-form.bp {
-  @include blueprint-form; 
-}
