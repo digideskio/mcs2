@@ -173,7 +173,7 @@ body {
 	    }
 	    #serverlist-ul { border-top:4px solid #4e4e4e; width:100%; }
 	    .server {
-	      width:100%;
+	      width:100%-30px;
       	border-bottom:4px solid #4e4e4e;	
       	height: 60px;
       	color:black;
@@ -197,7 +197,7 @@ body {
       	  }
       	}
       	.serverright {
-      	  width:550px;
+      	  width:540px;
       	  padding-top:5px;
       	  line-height:1em;
           float:right;
@@ -205,50 +205,63 @@ body {
  	    }
 	  }
     #userlist {
+      font-size:15px;
       border-width: 2px;
     	border-color:#4e4e4e;
     	border-style:solid;
 	    background:image-url("trans.png");
 	    width:100%-4px;
 	    #userfilters {
-	      padding:20px;
 	      background:#4e4e4e;
 	      height:70px;
 	      font-size:1.5em;
 	      color: white;
 	      a { color:white; }
+	      div {
+	        color:black;
+	        padding:20px;
+	        height:100%;
+	        background:image-url("trans.png");
+	        
+	      }
 	    }
 	    ul {
 	      border-top:5px solid #4e4e4e;
 	      width:100%;
 	      margin:0px;
 	      padding:0px;
+	      li {
+        	&:hover {
+        	  background:#8db6dc;
+        	}
+	      }
 	    }
+      #userlist-header {
+        font-size:20px;
+        line-height:20px;
+        height:20px;
+       }
       .user {
         width:100%;
-      	border-bottom:4px solid #4e4e4e;	
-      	height: 40px;
+      	border-bottom:2px solid #4e4e4e;	
+      	height: 10px;
       	color:black;
       	background:image-url("trans.png");
       	display: block;
       	text-decoration: none;
-      	padding:0 20px 0 30px;
-      	div {
-      	  display:inline;
-      	  
-      	}
-      	.userimg {
-      	  width:40px;
-      	  height:40px;
-      	  padding:5px;
+      	padding:0px 20px 10px 30px;
+
+      	span {
+      	  float:left;
+      	  height:10px;
+          margin:0px;
       	}
       	.username {
-      	  height:40px;
-          padding:10px;
-          font-size:20px;
-          line-height:15px;
-          padding:10px;
-          margin:0px;
+          width:300px;
+          font-family:'play';
+        }
+        .mcusername {
+          width:200px;       
         }
       } 
     }
@@ -322,10 +335,41 @@ body {
     }
   } 
   #footer {
-    @include column(24);
-    height:200px;
-    background:#4e4e4e;
-
+    padding:10px 10px 10px 10px;
+    margin-bottom:20px;
+    img {
+      float:left;
+      margin-right:30px;
+    }
+    div {
+      height:100%;
+      width:870px;
+      padding:20px 20px 50px 40px;
+      border-radius:20px;
+      background:#b0d1f2;
+//      border:2px solid #cbcbcb;
+      box-shadow:0 0  20px #dbdadc;
+      ul {
+        float:left;
+        display:inline;
+        lh {
+          font-family:'cabin sketch';
+          font-size:40px;
+          border-bottom:2px solid #6e8088;
+          padding-right:10px;
+        }
+        li {
+          font-family:'play';
+          font-size:14px;
+          list-style:none;
+          padding-left:10px;
+          border-bottom:1px solid #6e8088;
+          &:hover {
+            background:#a8c5e3;
+          }  
+        }
+      }
+    }
   }
 }
 

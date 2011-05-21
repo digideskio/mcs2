@@ -1,13 +1,21 @@
 %div#userlist
   %div#userfilters
-  
+    %div
+      Search our asssortment of users below
   %ul#userlist-ul
+    %lh.user#userlist-header
+      %span.username
+        Username
+      %span.mcusername
+        In-game
     - @users.each do |user|
       %li{:class=>"user", :id => user.id} 
         %a{:href => user_path(user.id) }
-          %div.userimg
-          %div.username
+          %span.username
             = user.username
+          %span.mcusername
+            = user.mc_username 
+        %br.clearboth
   = will_paginate @users
           
 

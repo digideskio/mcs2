@@ -645,7 +645,7 @@ body #content #serverlist #serverlist-ul {
 }
 /* line 175, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server {
-  width: 100%;
+  width: 100% -30px;
   border-bottom: 4px solid #4e4e4e;
   height: 60px;
   color: black;
@@ -674,22 +674,22 @@ body #content #serverlist .server .serverleft .servername {
 }
 /* line 199, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server .serverright {
-  width: 550px;
+  width: 540px;
   padding-top: 5px;
   line-height: 1em;
   float: right;
 }
 /* line 207, ../../app/stylesheets/screen.scss */
 body #content #userlist {
+  font-size: 15px;
   border-width: 2px;
   border-color: #4e4e4e;
   border-style: solid;
   background: url('/images/trans.png?1305402372');
   width: 100% -4px;
 }
-/* line 213, ../../app/stylesheets/screen.scss */
+/* line 214, ../../app/stylesheets/screen.scss */
 body #content #userlist #userfilters {
-  padding: 20px;
   background: #4e4e4e;
   height: 70px;
   font-size: 1.5em;
@@ -699,52 +699,65 @@ body #content #userlist #userfilters {
 body #content #userlist #userfilters a {
   color: white;
 }
-/* line 221, ../../app/stylesheets/screen.scss */
+/* line 220, ../../app/stylesheets/screen.scss */
+body #content #userlist #userfilters div {
+  color: black;
+  padding: 20px;
+  height: 100%;
+  background: url('/images/trans.png?1305402372');
+}
+/* line 228, ../../app/stylesheets/screen.scss */
 body #content #userlist ul {
   border-top: 5px solid #4e4e4e;
   width: 100%;
   margin: 0px;
   padding: 0px;
 }
-/* line 227, ../../app/stylesheets/screen.scss */
+/* line 234, ../../app/stylesheets/screen.scss */
+body #content #userlist ul li:hover {
+  background: #8db6dc;
+}
+/* line 239, ../../app/stylesheets/screen.scss */
+body #content #userlist #userlist-header {
+  font-size: 20px;
+  line-height: 20px;
+  height: 20px;
+}
+/* line 244, ../../app/stylesheets/screen.scss */
 body #content #userlist .user {
   width: 100%;
-  border-bottom: 4px solid #4e4e4e;
-  height: 40px;
+  border-bottom: 2px solid #4e4e4e;
+  height: 10px;
   color: black;
   background: url('/images/trans.png?1305402372');
   display: block;
   text-decoration: none;
-  padding: 0 20px 0 30px;
+  padding: 0px 20px 10px 30px;
 }
-/* line 236, ../../app/stylesheets/screen.scss */
-body #content #userlist .user div {
-  display: inline;
-}
-/* line 240, ../../app/stylesheets/screen.scss */
-body #content #userlist .user .userimg {
-  width: 40px;
-  height: 40px;
-  padding: 5px;
-}
-/* line 245, ../../app/stylesheets/screen.scss */
-body #content #userlist .user .username {
-  height: 40px;
-  padding: 10px;
-  font-size: 20px;
-  line-height: 15px;
-  padding: 10px;
+/* line 254, ../../app/stylesheets/screen.scss */
+body #content #userlist .user span {
+  float: left;
+  height: 10px;
   margin: 0px;
 }
-/* line 255, ../../app/stylesheets/screen.scss */
+/* line 259, ../../app/stylesheets/screen.scss */
+body #content #userlist .user .username {
+  width: 300px;
+  font-family: 'play';
+}
+/* line 263, ../../app/stylesheets/screen.scss */
+body #content #userlist .user .mcusername {
+  width: 200px;
+}
+/* line 268, ../../app/stylesheets/screen.scss */
 body #content #showserver {
   padding: 0px 00px;
 }
-/* line 257, ../../app/stylesheets/screen.scss */
+/* line 270, ../../app/stylesheets/screen.scss */
 body #content #showserver .header {
   padding: 0px 0px;
 }
-/* line 260, ../../app/stylesheets/screen.scss */
+/* line 273, ../../app/stylesheets/screen.scss */
 body #content #showserver .header #servertitle div {
   word-wrap: break-word;
   line-height: 60px;
@@ -756,19 +769,19 @@ body #content #showserver .header #servertitle div {
   border-top-right-radius: 10px;
   padding-left: 20px;
 }
-/* line 276, ../../app/stylesheets/screen.scss */
+/* line 289, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody {
   padding: 20px;
   background: url('/images/trans.png?1305402372');
   width: 890px;
   border: 2px solid #6a7987;
 }
-/* line 281, ../../app/stylesheets/screen.scss */
+/* line 294, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #servercontent {
   width: 570px;
   float: left;
 }
-/* line 284, ../../app/stylesheets/screen.scss */
+/* line 297, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #servercontent #serverdetails {
   border-bottom: 5px solid #4d6a85;
   margin-bottom: 20px;
@@ -776,7 +789,7 @@ body #content #showserver #serverbody #servercontent #serverdetails {
   font-size: 20px;
   background: url('/images/trans.png?1305402372');
 }
-/* line 291, ../../app/stylesheets/screen.scss */
+/* line 304, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #servercontent #serveractions {
   border-left: 5px solid #333;
   padding: 10px;
@@ -785,7 +798,7 @@ body #content #showserver #serverbody #servercontent #serveractions {
   width: 570px;
   float: left;
 }
-/* line 300, ../../app/stylesheets/screen.scss */
+/* line 313, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo {
   float: right;
   width: 250px;
@@ -793,15 +806,15 @@ body #content #showserver #serverbody #serverinfo {
   border-bottom-left-radius: 15px;
   font-size: 20px;
 }
-/* line 306, ../../app/stylesheets/screen.scss */
+/* line 319, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo #serverinfo-title {
   text-align: center;
 }
-/* line 309, ../../app/stylesheets/screen.scss */
+/* line 322, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo hr {
   margin: 4px;
 }
-/* line 310, ../../app/stylesheets/screen.scss */
+/* line 323, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo .serverinfo-field {
   word-wrap: break-word;
   background: url('/images/trans.png?1305402372');
@@ -810,21 +823,51 @@ body #content #showserver #serverbody #serverinfo .serverinfo-field {
   text-indent: -10px;
   line-height: 20px;
 }
-/* line 317, ../../app/stylesheets/screen.scss */
+/* line 330, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo .serverinfo-field b {
   color: black;
   font-size: 15px;
 }
-/* line 324, ../../app/stylesheets/screen.scss */
+/* line 337, ../../app/stylesheets/screen.scss */
 body #footer {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 950px;
-  height: 200px;
-  background: #4e4e4e;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 20px;
 }
-/* line 147, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body #footer {
-  overflow-x: hidden;
+/* line 340, ../../app/stylesheets/screen.scss */
+body #footer img {
+  float: left;
+  margin-right: 30px;
+}
+/* line 344, ../../app/stylesheets/screen.scss */
+body #footer div {
+  height: 100%;
+  width: 870px;
+  padding: 20px 20px 50px 40px;
+  border-radius: 20px;
+  background: #b0d1f2;
+  box-shadow: 0 0  20px #dbdadc;
+}
+/* line 352, ../../app/stylesheets/screen.scss */
+body #footer div ul {
+  float: left;
+  display: inline;
+}
+/* line 355, ../../app/stylesheets/screen.scss */
+body #footer div ul lh {
+  font-family: 'cabin sketch';
+  font-size: 40px;
+  border-bottom: 2px solid #6e8088;
+  padding-right: 10px;
+}
+/* line 361, ../../app/stylesheets/screen.scss */
+body #footer div ul li {
+  font-family: 'play';
+  font-size: 14px;
+  list-style: none;
+  padding-left: 10px;
+  border-bottom: 1px solid #6e8088;
+}
+/* line 367, ../../app/stylesheets/screen.scss */
+body #footer div ul li:hover {
+  background: #a8c5e3;
 }
