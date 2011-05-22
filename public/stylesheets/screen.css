@@ -354,7 +354,6 @@ body #header nav {
   text-align: right;
   display: inline;
   float: right;
-  background: #6dbafb;
   font-size: 20px;
   height: 71px;
   width: 106px;
@@ -587,7 +586,7 @@ body #content #serverlist #serverfilters a {
 }
 /* line 126, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters div {
-  background: #b0d1f2;
+  background: #bddcfd;
   border-radius: 5px;
 }
 /* line 131, ../../app/stylesheets/screen.scss */
