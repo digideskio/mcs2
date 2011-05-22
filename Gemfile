@@ -5,8 +5,8 @@ gem 'cancan'
 gem 'devise'
 gem 'haml'
 gem 'sass'
-gem 'barista'
-gem 'therubyracer', :require => nil
+# gem 'barista'
+# gem 'therubyracer', :require => nil
 gem 'jquery-rails'
 gem "compass", ">= 0.11.1"
 gem 'haml-rails'
