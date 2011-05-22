@@ -1,5 +1,10 @@
 Mcs2::Application.routes.draw do
 
+  match "/about" => "pages#about", :as => "about"
+  match "/faq" => "pages#faq", :as => "faq"
+  match "/suggestions" => "pages#suggestions", :as => "suggestions"
+  match "/contact" => "pages#contact", :as => "contact"
+
   resources :users, :only => [:show, :index]  
   
   devise_for :users,

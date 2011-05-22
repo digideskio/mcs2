@@ -62,7 +62,7 @@
           %b
             Whitelist URL:
           %br
-          = link_to @server.whitelist_url, @server.whitelist_url, :target => "_blank"
+          = link_to @server.whitelist_url, url_with_protocol(@server.whitelist_url), :target => "_blank"
       - if !@server.location.nil? && !@server.location.blank?
         %div.serverinfo-field
           %b
