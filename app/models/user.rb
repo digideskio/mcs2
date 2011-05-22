@@ -33,7 +33,8 @@ class User < ActiveRecord::Base
   # Getters and Setters
   #
   attr_accessible :email, :password, :password_confirmation,
-                  :remember_me, :username, :mc_username
+                  :remember_me, :username, :mc_username,
+                  :bio, :website
                   
   validates :username, :presence => true, :uniqueness => true, :format => /^\w+$/i, :length => { :maximum => 30 }
   validates :mc_username, :format => /^\w+$/i, :allow_nil => true, :allow_blank => true
