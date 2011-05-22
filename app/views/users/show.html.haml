@@ -1,16 +1,27 @@
-%h1= @user.username
--me = can? :update, @user
--if me
-  %p
-    Email (not shown publicly): 
-    =@user.email
--if !@user.mc_username.nil? and !@user.mc_username.blank?
-  %p
-    Minecraft Username:
-    =@user.mc_username
-- else
-  %p Empty profile...
--if me
-  %br
-  =link_to "Edit Information", edit_user_registration_path
-
+%div#showuser
+  %div.header
+    %div#usertitle
+      %div
+        =@user.username
+  %div#userbody
+    %div#usercontent
+      %div#userdetails
+        Bio here.
+        %hr
+      %div#useractions
+        %ul
+          %li
+            user registered on
+            = @user.created_at
+    %div#userinfo
+      %div#userinfo-title
+        User Basics
+        %hr
+        %div.userinfo-field
+          %b
+            Website:
+          %br
+          website
+    %br.clearboth
+- if can? :update, @user
+  = link_to 'Edit', edit_user_registration_path(@user)

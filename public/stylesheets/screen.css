@@ -417,7 +417,7 @@ body #content {
   margin-bottom: 20px;
 }
 /* line 103, ../../app/stylesheets/screen.scss */
-body #content .userforms {
+body #content .mainforms {
   display: inline;
   float: left;
   margin-right: 10px;
@@ -428,78 +428,78 @@ body #content .userforms {
   color: white;
 }
 /* line 18, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-body #content .userforms label {
+body #content .mainforms label {
   font-weight: bold;
 }
 /* line 19, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-body #content .userforms fieldset {
+body #content .mainforms fieldset {
   padding: 1.4em;
   margin: 0 0 1.5em 0;
 }
 /* line 20, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-body #content .userforms legend {
+body #content .mainforms legend {
   font-weight: bold;
   font-size: 1.2em;
 }
 /* line 26, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-body #content .userforms input.text, body #content .userforms input.title, body #content .userforms input[type=email], body #content .userforms input[type=text], body #content .userforms input[type=password] {
+body #content .mainforms input.text, body #content .mainforms input.title, body #content .mainforms input[type=email], body #content .mainforms input[type=text], body #content .mainforms input[type=password] {
   margin: 0.5em 0;
   background-color: white;
   padding: 5px;
 }
 /* line 27, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-body #content .userforms input.title {
+body #content .mainforms input.title {
   font-size: 1.5em;
 }
 /* line 29, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-body #content .userforms textarea {
+body #content .mainforms textarea {
   margin: 0.5em 0;
   padding: 5px;
 }
 /* line 30, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-body #content .userforms select {
+body #content .mainforms select {
   margin: 0.5em 0;
 }
 /* line 55, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-body #content .userforms fieldset {
+body #content .mainforms fieldset {
   border: 1px solid #cccccc;
 }
 /* line 58, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-body #content .userforms input.text, body #content .userforms input.title, body #content .userforms input[type=email], body #content .userforms input[type=text], body #content .userforms input[type=password],
-body #content .userforms textarea {
+body #content .mainforms input.text, body #content .mainforms input.title, body #content .mainforms input[type=email], body #content .mainforms input[type=text], body #content .mainforms input[type=password],
+body #content .mainforms textarea {
   background-color: #fff;
   border: 1px solid #bbbbbb;
 }
 /* line 61, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-body #content .userforms input.text:focus, body #content .userforms input.title:focus, body #content .userforms input[type=email]:focus, body #content .userforms input[type=text]:focus, body #content .userforms input[type=password]:focus,
-body #content .userforms textarea:focus {
+body #content .mainforms input.text:focus, body #content .mainforms input.title:focus, body #content .mainforms input[type=email]:focus, body #content .mainforms input[type=text]:focus, body #content .mainforms input[type=password]:focus,
+body #content .mainforms textarea:focus {
   border: 1px solid #666666;
 }
 /* line 65, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-body #content .userforms select {
+body #content .mainforms select {
   background-color: #fff;
   border-width: 1px;
   border-style: solid;
 }
 /* line 44, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-body #content .userforms input.text, body #content .userforms input.title, body #content .userforms input[type=email], body #content .userforms input[type=text], body #content .userforms input[type=password] {
+body #content .mainforms input.text, body #content .mainforms input.title, body #content .mainforms input[type=email], body #content .mainforms input[type=text], body #content .mainforms input[type=password] {
   width: 300px;
 }
 /* line 46, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-body #content .userforms textarea {
+body #content .mainforms textarea {
   width: 390px;
   height: 250px;
 }
 /* line 147, ../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body #content .userforms {
+* html body #content .mainforms {
   overflow-x: hidden;
 }
 /* line 110, ../../app/stylesheets/screen.scss */
-body #content .userforms h1 {
+body #content .mainforms h1 {
   color: #fAFAFA;
 }
 /* line 111, ../../app/stylesheets/screen.scss */
-body #content .userforms a {
+body #content .mainforms a {
   color: #F0F0F0;
 }
 /* line 113, ../../app/stylesheets/screen.scss */
@@ -586,14 +586,19 @@ body #content #serverlist #serverfilters a {
   color: black;
 }
 /* line 126, ../../app/stylesheets/screen.scss */
+body #content #serverlist #serverfilters div {
+  background: #b0d1f2;
+  border-radius: 5px;
+}
+/* line 131, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters #serverfunctions {
   float: left;
-  background: url('/images/trans.png?1305402372');
   width: 300px;
   font-family: 'cabin sketch';
 }
-/* line 131, ../../app/stylesheets/screen.scss */
+/* line 135, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters #serverfunctions ul {
+  border-radius: 5px;
   padding: 10px 0px 0px 0px;
   border-width: 0 1px 1px 0;
   border-style: solid;
@@ -601,8 +606,9 @@ body #content #serverlist #serverfilters #serverfunctions ul {
   margin-right: 0px;
   margin-bottom: 20px;
 }
-/* line 139, ../../app/stylesheets/screen.scss */
+/* line 144, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters #serverfunctions li {
+  border-radius: 2px;
   padding-left: 30px;
   border-width: 1px 0px 0px 0px;
   border-style: solid;
@@ -610,11 +616,11 @@ body #content #serverlist #serverfilters #serverfunctions li {
   margin: 0px;
   width: 100% -30px;
 }
-/* line 146, ../../app/stylesheets/screen.scss */
+/* line 152, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters #serverfunctions li:hover {
-  background: url('/images/trans.png?1305402372');
+  background: white;
 }
-/* line 149, ../../app/stylesheets/screen.scss */
+/* line 155, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters #serverfunctions li input {
   margin: 5px;
   width: 230px;
@@ -622,28 +628,27 @@ body #content #serverlist #serverfilters #serverfunctions li input {
   font-size: 20px;
   border: 1px solid #657d96;
 }
-/* line 158, ../../app/stylesheets/screen.scss */
+/* line 164, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters #serverheader {
   float: right;
-  background: url('/images/trans.png?1305402372');
   width: 643px;
   font-size: 15px;
   padding: 10px 0 15px 0;
   height: 101px;
 }
-/* line 166, ../../app/stylesheets/screen.scss */
+/* line 170, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters #serverheader div {
   border-width: 1px 0 1px 0;
   border-style: solid;
   border-color: #657d96;
   padding: 10px;
 }
-/* line 174, ../../app/stylesheets/screen.scss */
+/* line 178, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverlist-ul {
   border-top: 4px solid #4e4e4e;
   width: 100%;
 }
-/* line 175, ../../app/stylesheets/screen.scss */
+/* line 179, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server {
   width: 100% -30px;
   border-bottom: 4px solid #4e4e4e;
@@ -653,18 +658,19 @@ body #content #serverlist .server {
   display: block;
   text-decoration: none;
   padding-left: 30px;
+  border-radius: 5px;
 }
-/* line 184, ../../app/stylesheets/screen.scss */
+/* line 188, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server:hover {
   background: #8db6dc;
 }
-/* line 187, ../../app/stylesheets/screen.scss */
+/* line 192, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server .serverleft {
   float: left;
   width: 350px;
   height: 100%;
 }
-/* line 191, ../../app/stylesheets/screen.scss */
+/* line 196, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server .serverleft .servername {
   font-size: 20px;
   display: block;
@@ -672,14 +678,14 @@ body #content #serverlist .server .serverleft .servername {
   font-family: 'play';
   word-spacing: -5px;
 }
-/* line 199, ../../app/stylesheets/screen.scss */
+/* line 204, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server .serverright {
   width: 540px;
   padding-top: 5px;
   line-height: 1em;
   float: right;
 }
-/* line 207, ../../app/stylesheets/screen.scss */
+/* line 212, ../../app/stylesheets/screen.scss */
 body #content #userlist {
   font-size: 15px;
   border-width: 2px;
@@ -688,43 +694,43 @@ body #content #userlist {
   background: url('/images/trans.png?1305402372');
   width: 100% -4px;
 }
-/* line 214, ../../app/stylesheets/screen.scss */
+/* line 219, ../../app/stylesheets/screen.scss */
 body #content #userlist #userfilters {
   background: #4e4e4e;
-  height: 70px;
   font-size: 1.5em;
   color: white;
 }
-/* line 219, ../../app/stylesheets/screen.scss */
+/* line 223, ../../app/stylesheets/screen.scss */
 body #content #userlist #userfilters a {
   color: white;
 }
-/* line 220, ../../app/stylesheets/screen.scss */
+/* line 224, ../../app/stylesheets/screen.scss */
 body #content #userlist #userfilters div {
   color: black;
   padding: 20px;
-  height: 100%;
-  background: url('/images/trans.png?1305402372');
+  background: #b0d1f2;
+  border-radius: 5px;
 }
-/* line 228, ../../app/stylesheets/screen.scss */
+/* line 231, ../../app/stylesheets/screen.scss */
 body #content #userlist ul {
   border-top: 5px solid #4e4e4e;
   width: 100%;
-  margin: 0px;
+  margin: 0;
   padding: 0px;
 }
-/* line 234, ../../app/stylesheets/screen.scss */
+/* line 237, ../../app/stylesheets/screen.scss */
 body #content #userlist ul li:hover {
   background: #8db6dc;
 }
-/* line 239, ../../app/stylesheets/screen.scss */
+/* line 242, ../../app/stylesheets/screen.scss */
 body #content #userlist #userlist-header {
   font-size: 20px;
   line-height: 20px;
   height: 20px;
 }
-/* line 244, ../../app/stylesheets/screen.scss */
+/* line 247, ../../app/stylesheets/screen.scss */
 body #content #userlist .user {
+  border-radius: 5px;
   width: 100%;
   border-bottom: 2px solid #4e4e4e;
   height: 10px;
@@ -734,30 +740,30 @@ body #content #userlist .user {
   text-decoration: none;
   padding: 0px 20px 10px 30px;
 }
-/* line 254, ../../app/stylesheets/screen.scss */
+/* line 258, ../../app/stylesheets/screen.scss */
 body #content #userlist .user span {
   float: left;
   height: 10px;
   margin: 0px;
 }
-/* line 259, ../../app/stylesheets/screen.scss */
+/* line 263, ../../app/stylesheets/screen.scss */
 body #content #userlist .user .username {
   width: 300px;
   font-family: 'play';
 }
-/* line 263, ../../app/stylesheets/screen.scss */
+/* line 267, ../../app/stylesheets/screen.scss */
 body #content #userlist .user .mcusername {
   width: 200px;
 }
-/* line 268, ../../app/stylesheets/screen.scss */
+/* line 272, ../../app/stylesheets/screen.scss */
 body #content #showserver {
   padding: 0px 00px;
 }
-/* line 270, ../../app/stylesheets/screen.scss */
+/* line 274, ../../app/stylesheets/screen.scss */
 body #content #showserver .header {
   padding: 0px 0px;
 }
-/* line 273, ../../app/stylesheets/screen.scss */
+/* line 277, ../../app/stylesheets/screen.scss */
 body #content #showserver .header #servertitle div {
   word-wrap: break-word;
   line-height: 60px;
@@ -769,19 +775,19 @@ body #content #showserver .header #servertitle div {
   border-top-right-radius: 10px;
   padding-left: 20px;
 }
-/* line 289, ../../app/stylesheets/screen.scss */
+/* line 293, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody {
   padding: 20px;
   background: url('/images/trans.png?1305402372');
   width: 890px;
   border: 2px solid #6a7987;
 }
-/* line 294, ../../app/stylesheets/screen.scss */
+/* line 298, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #servercontent {
   width: 570px;
   float: left;
 }
-/* line 297, ../../app/stylesheets/screen.scss */
+/* line 301, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #servercontent #serverdetails {
   border-bottom: 5px solid #4d6a85;
   margin-bottom: 20px;
@@ -789,7 +795,7 @@ body #content #showserver #serverbody #servercontent #serverdetails {
   font-size: 20px;
   background: url('/images/trans.png?1305402372');
 }
-/* line 304, ../../app/stylesheets/screen.scss */
+/* line 308, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #servercontent #serveractions {
   border-left: 5px solid #333;
   padding: 10px;
@@ -798,7 +804,7 @@ body #content #showserver #serverbody #servercontent #serveractions {
   width: 570px;
   float: left;
 }
-/* line 313, ../../app/stylesheets/screen.scss */
+/* line 317, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo {
   float: right;
   width: 250px;
@@ -806,15 +812,15 @@ body #content #showserver #serverbody #serverinfo {
   border-bottom-left-radius: 15px;
   font-size: 20px;
 }
-/* line 319, ../../app/stylesheets/screen.scss */
+/* line 323, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo #serverinfo-title {
   text-align: center;
 }
-/* line 322, ../../app/stylesheets/screen.scss */
+/* line 326, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo hr {
   margin: 4px;
 }
-/* line 323, ../../app/stylesheets/screen.scss */
+/* line 327, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo .serverinfo-field {
   word-wrap: break-word;
   background: url('/images/trans.png?1305402372');
@@ -823,22 +829,103 @@ body #content #showserver #serverbody #serverinfo .serverinfo-field {
   text-indent: -10px;
   line-height: 20px;
 }
-/* line 330, ../../app/stylesheets/screen.scss */
+/* line 334, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo .serverinfo-field b {
   color: black;
   font-size: 15px;
 }
-/* line 337, ../../app/stylesheets/screen.scss */
+/* line 340, ../../app/stylesheets/screen.scss */
+body #content #showuser {
+  padding: 0px 00px;
+}
+/* line 342, ../../app/stylesheets/screen.scss */
+body #content #showuser .header {
+  padding: 0px 0px;
+}
+/* line 345, ../../app/stylesheets/screen.scss */
+body #content #showuser .header #usertitle div {
+  word-wrap: break-word;
+  line-height: 60px;
+  font-size: 60px;
+  font-family: 'play';
+  color: black;
+  padding: -20px 0px -50px 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-left: 20px;
+}
+/* line 361, ../../app/stylesheets/screen.scss */
+body #content #showuser #userbody {
+  padding: 20px;
+  background: url('/images/trans.png?1305402372');
+  width: 890px;
+  border: 2px solid #6a7987;
+}
+/* line 366, ../../app/stylesheets/screen.scss */
+body #content #showuser #userbody #usercontent {
+  width: 570px;
+  float: left;
+}
+/* line 369, ../../app/stylesheets/screen.scss */
+body #content #showuser #userbody #usercontent #userdetails {
+  border-bottom: 5px solid #4d6a85;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 20px;
+  background: url('/images/trans.png?1305402372');
+}
+/* line 376, ../../app/stylesheets/screen.scss */
+body #content #showuser #userbody #usercontent #useractions {
+  border-left: 5px solid #333;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 570px;
+  float: left;
+}
+/* line 385, ../../app/stylesheets/screen.scss */
+body #content #showuser #userbody #userinfo {
+  float: right;
+  width: 250px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-size: 20px;
+}
+/* line 391, ../../app/stylesheets/screen.scss */
+body #content #showuser #userbody #userinfo #userinfo-title {
+  text-align: center;
+}
+/* line 394, ../../app/stylesheets/screen.scss */
+body #content #showuser #userbody #userinfo hr {
+  margin: 4px;
+}
+/* line 395, ../../app/stylesheets/screen.scss */
+body #content #showuser #userbody #userinfo .userinfo-field {
+  word-wrap: break-word;
+  background: url('/images/trans.png?1305402372');
+  font-size: 20px;
+  padding-left: 10px;
+  text-indent: -10px;
+  width: 100%;
+  text-align: left;
+  line-height: 20px;
+}
+/* line 404, ../../app/stylesheets/screen.scss */
+body #content #showuser #userbody #userinfo .userinfo-field b {
+  color: black;
+  font-size: 15px;
+}
+/* line 411, ../../app/stylesheets/screen.scss */
 body #footer {
   padding: 10px 10px 10px 10px;
   margin-bottom: 20px;
 }
-/* line 340, ../../app/stylesheets/screen.scss */
+/* line 414, ../../app/stylesheets/screen.scss */
 body #footer img {
   float: left;
   margin-right: 30px;
 }
-/* line 344, ../../app/stylesheets/screen.scss */
+/* line 418, ../../app/stylesheets/screen.scss */
 body #footer div {
   height: 100%;
   width: 870px;
@@ -847,19 +934,19 @@ body #footer div {
   background: #b0d1f2;
   box-shadow: 0 0  20px #dbdadc;
 }
-/* line 352, ../../app/stylesheets/screen.scss */
+/* line 426, ../../app/stylesheets/screen.scss */
 body #footer div ul {
   float: left;
   display: inline;
 }
-/* line 355, ../../app/stylesheets/screen.scss */
+/* line 429, ../../app/stylesheets/screen.scss */
 body #footer div ul lh {
   font-family: 'cabin sketch';
   font-size: 40px;
   border-bottom: 2px solid #6e8088;
   padding-right: 10px;
 }
-/* line 361, ../../app/stylesheets/screen.scss */
+/* line 435, ../../app/stylesheets/screen.scss */
 body #footer div ul li {
   font-family: 'play';
   font-size: 14px;
@@ -867,7 +954,7 @@ body #footer div ul li {
   padding-left: 10px;
   border-bottom: 1px solid #6e8088;
 }
-/* line 367, ../../app/stylesheets/screen.scss */
+/* line 441, ../../app/stylesheets/screen.scss */
 body #footer div ul li:hover {
   background: #a8c5e3;
 }

@@ -100,7 +100,7 @@ body {
     clear:both;
     $content-columns: 24;
     margin-bottom:20px;
-    .userforms {
+    .mainforms {
         @include blueprint-form;
         @include column(23);
         padding:30px 0px 50px ($blueprint-grid-outer-width * 8);
@@ -123,12 +123,17 @@ body {
 	      font-size:30px;
 	      color: black;
 	      a { color:black; }
+	      div{
+//	        background:image-url("trans.png");
+	        background: #b0d1f2;	        
+	        border-radius:5px;
+	      }
 	      #serverfunctions {
 	        float:left;
-	        background:image-url("trans.png");
 	        width:300px;
 	        font-family:'cabin sketch';
 	        ul {
+  	        border-radius:5px;
 	          padding:10px 0px 0px 0px;
 	          border-width:0 1px 1px 0;
 	          border-style:solid;
@@ -137,6 +142,7 @@ body {
 	          margin-bottom:20px;
 	        }
 	        li {
+	          border-radius:2px;
 	          padding-left:30px;
 	          border-width:1px 0px 0px 0px;
 	          border-style:solid;
@@ -144,7 +150,7 @@ body {
 	          margin: 0px;
 	          width:100%-30px;
 	          &:hover {
-	            background:image-url("trans.png");  
+	            background:white;  
 	          }
 	          input {
 	            margin:5px;
@@ -157,12 +163,10 @@ body {
 	      }
 	      #serverheader {
 	        float:right;
-	        background:image-url("trans.png");
 	        width:643px;
 	        font-size:15px;
 	        padding:10px 0 15px 0;
 	        height:101px;
-
 	        div {
 	          border-width:1px 0 1px 0;
 	          border-style:solid;
@@ -184,6 +188,7 @@ body {
       	&:hover {
       	  background:#8db6dc;
       	}
+      	border-radius:5px;
       	.serverleft {
       	  float:left;
           width:350px;
@@ -213,22 +218,20 @@ body {
 	    width:100%-4px;
 	    #userfilters {
 	      background:#4e4e4e;
-	      height:70px;
 	      font-size:1.5em;
 	      color: white;
 	      a { color:white; }
 	      div {
 	        color:black;
 	        padding:20px;
-	        height:100%;
-	        background:image-url("trans.png");
-	        
+	        background:#b0d1f2;
+	        border-radius:5px;
 	      }
 	    }
 	    ul {
 	      border-top:5px solid #4e4e4e;
 	      width:100%;
-	      margin:0px;
+	      margin: 0;
 	      padding:0px;
 	      li {
         	&:hover {
@@ -242,6 +245,7 @@ body {
         height:20px;
        }
       .user {
+      	border-radius:5px;
         width:100%;
       	border-bottom:2px solid #4e4e4e;	
       	height: 10px;
@@ -333,7 +337,77 @@ body {
         }
       }
     }
-  } 
+    #showuser {
+      padding: 0px 00px;
+      .header {
+        padding:0px 0px;
+        #usertitle {
+          div {
+            word-wrap:break-word;
+            line-height:60px;
+            font-size:60px;
+            font-family:'play';
+            color:black;
+            padding:-20px 0px -50px 0px;
+            border-top-left-radius:10px;
+            border-top-right-radius:10px;
+            padding-left: 20px;
+             
+          }
+
+
+        }
+      }
+      #userbody {
+        padding:20px;
+        background:image-url('trans.png');
+        width:890px;
+        border:2px solid #6a7987;
+        #usercontent {
+          width:570px;
+          float:left;
+          #userdetails {
+            border-bottom:5px solid #4d6a85;
+            margin-bottom:20px;
+            padding:10px;
+            font-size:20px;
+            background:image-url("trans.png");
+          }
+          #useractions {
+            border-left:5px solid #333;
+            padding:10px;
+            font-size:20px;
+            font-weight:bold;
+            width:570px;
+            float:left;
+          }
+        }
+        #userinfo {
+          float:right;
+          width:250px;
+          border-top-left-radius:15px;
+          border-bottom-left-radius:15px;
+          font-size:20px;
+          #userinfo-title {
+            text-align:center;
+          }
+          hr { margin:4px; }
+          .userinfo-field {
+            word-wrap:break-word;
+            background:image-url("trans.png");
+            font-size:20px;
+            padding-left:10px;
+            text-indent:-10px;
+            width:100%;
+            text-align:left;
+            line-height:20px;
+            b { color:black; font-size:15px; }
+            
+          }
+        }
+      }
+    }
+  }   
   #footer {
     padding:10px 10px 10px 10px;
     margin-bottom:20px;
