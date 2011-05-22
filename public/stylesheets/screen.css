@@ -336,35 +336,39 @@ body #container {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 36, ../../app/stylesheets/screen.scss */
+/* line 35, ../../app/stylesheets/screen.scss */
+body #header {
+  background: #2e2e2e;
+}
+/* line 37, ../../app/stylesheets/screen.scss */
 body #header #title {
   text-align: center;
-  font-size: 85px;
+  font-size: 90px;
   line-height: 1.2em;
   font-family: 'cabin sketch';
   margin-bottom: -10px;
 }
-/* line 38, ../../app/stylesheets/screen.scss */
+/* line 39, ../../app/stylesheets/screen.scss */
 body #header #title a {
-  color: #4e4e4e;
+  color: #d95e5e;
 }
-/* line 44, ../../app/stylesheets/screen.scss */
+/* line 45, ../../app/stylesheets/screen.scss */
 body #header nav {
   width: 100%;
   background: #2e2e2e;
   text-align: right;
   font-size: 20px;
 }
-/* line 49, ../../app/stylesheets/screen.scss */
+/* line 50, ../../app/stylesheets/screen.scss */
 body #header nav a {
   color: white;
 }
-/* line 50, ../../app/stylesheets/screen.scss */
+/* line 51, ../../app/stylesheets/screen.scss */
 body #header nav ul {
   margin: 0px;
   padding: 0 10px 0 0;
 }
-/* line 53, ../../app/stylesheets/screen.scss */
+/* line 54, ../../app/stylesheets/screen.scss */
 body #header nav ul li {
   display: inline;
   list-style: none;
@@ -372,12 +376,12 @@ body #header nav ul li {
   padding: 0 0 0 0;
   line-height: 24px;
 }
-/* line 59, ../../app/stylesheets/screen.scss */
+/* line 60, ../../app/stylesheets/screen.scss */
 body #header nav ul li:hover {
   background: #4e4e4e;
   border-radius: 3px;
 }
-/* line 68, ../../app/stylesheets/screen.scss */
+/* line 69, ../../app/stylesheets/screen.scss */
 body #notifications .info, body #notifications .success, body #notifications .warning, body #notifications .error, body #notifications .validation {
   border: 1px solid;
   margin: 10px 0px;
@@ -385,36 +389,36 @@ body #notifications .info, body #notifications .success, body #notifications .wa
   background-repeat: no-repeat;
   background-position: 10px center;
 }
-/* line 75, ../../app/stylesheets/screen.scss */
+/* line 76, ../../app/stylesheets/screen.scss */
 body #notifications .info {
   color: #00529B;
   background-color: #BDE5F8;
   background-image: url("info.png");
 }
-/* line 80, ../../app/stylesheets/screen.scss */
+/* line 81, ../../app/stylesheets/screen.scss */
 body #notifications .success {
   color: #4F8A10;
   background-color: #DFF2BF;
   background-image: url("success.png");
 }
-/* line 85, ../../app/stylesheets/screen.scss */
+/* line 86, ../../app/stylesheets/screen.scss */
 body #notifications .warning {
   color: #9F6000;
   background-color: #FEEFB3;
   background-image: url("warning.png");
 }
-/* line 90, ../../app/stylesheets/screen.scss */
+/* line 91, ../../app/stylesheets/screen.scss */
 body #notifications .error {
   color: #D8000C;
   background-color: #FFBABA;
   background-image: url("error.png");
 }
-/* line 96, ../../app/stylesheets/screen.scss */
+/* line 97, ../../app/stylesheets/screen.scss */
 body #content {
   clear: both;
   margin-bottom: 20px;
 }
-/* line 100, ../../app/stylesheets/screen.scss */
+/* line 101, ../../app/stylesheets/screen.scss */
 body #content .mainforms {
   display: inline;
   float: left;
@@ -492,15 +496,15 @@ body #content .mainforms textarea {
 * html body #content .mainforms {
   overflow-x: hidden;
 }
-/* line 107, ../../app/stylesheets/screen.scss */
+/* line 108, ../../app/stylesheets/screen.scss */
 body #content .mainforms h1 {
   color: #fAFAFA;
 }
-/* line 108, ../../app/stylesheets/screen.scss */
+/* line 109, ../../app/stylesheets/screen.scss */
 body #content .mainforms a {
   color: #F0F0F0;
 }
-/* line 110, ../../app/stylesheets/screen.scss */
+/* line 111, ../../app/stylesheets/screen.scss */
 body #content #serverlist {
   border-width: 2px;
   border-color: #2e2e2e;
@@ -508,11 +512,11 @@ body #content #serverlist {
   background: url('/images/trans.png?1305402372');
   width: 100% -2px;
 }
-/* line 116, ../../app/stylesheets/screen.scss */
+/* line 117, ../../app/stylesheets/screen.scss */
 body #content #serverlist ul {
   padding: 0px;
 }
-/* line 117, ../../app/stylesheets/screen.scss */
+/* line 118, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters {
   background: #2e2e2e;
   font-size: 30px;
@@ -579,22 +583,22 @@ body #content #serverlist #serverfilters textarea {
   width: 390px;
   height: 250px;
 }
-/* line 122, ../../app/stylesheets/screen.scss */
+/* line 123, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters a {
   color: black;
 }
-/* line 123, ../../app/stylesheets/screen.scss */
+/* line 124, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters div {
   background: #bddcfd;
   border-radius: 5px;
 }
-/* line 128, ../../app/stylesheets/screen.scss */
+/* line 129, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters #serverfunctions {
   float: left;
   width: 300px;
   font-family: 'cabin sketch';
 }
-/* line 132, ../../app/stylesheets/screen.scss */
+/* line 133, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters #serverfunctions ul {
   border-radius: 5px;
   padding: 10px 0px 0px 0px;
@@ -604,7 +608,7 @@ body #content #serverlist #serverfilters #serverfunctions ul {
   margin-right: 0px;
   margin-bottom: 20px;
 }
-/* line 141, ../../app/stylesheets/screen.scss */
+/* line 142, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters #serverfunctions li {
   border-radius: 2px;
   padding-left: 30px;
@@ -614,11 +618,11 @@ body #content #serverlist #serverfilters #serverfunctions li {
   margin: 0px;
   width: 100% -30px;
 }
-/* line 149, ../../app/stylesheets/screen.scss */
+/* line 150, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters #serverfunctions li:hover {
   background: white;
 }
-/* line 152, ../../app/stylesheets/screen.scss */
+/* line 153, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters #serverfunctions li input {
   margin: 5px;
   width: 230px;
@@ -626,7 +630,7 @@ body #content #serverlist #serverfilters #serverfunctions li input {
   font-size: 20px;
   border: 1px solid #657d96;
 }
-/* line 161, ../../app/stylesheets/screen.scss */
+/* line 162, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters #serverheader {
   float: right;
   width: 643px;
@@ -634,19 +638,19 @@ body #content #serverlist #serverfilters #serverheader {
   padding: 10px 0 15px 0;
   height: 101px;
 }
-/* line 167, ../../app/stylesheets/screen.scss */
+/* line 168, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverfilters #serverheader div {
   border-width: 1px 0 1px 0;
   border-style: solid;
   border-color: #657d96;
   padding: 10px;
 }
-/* line 175, ../../app/stylesheets/screen.scss */
+/* line 176, ../../app/stylesheets/screen.scss */
 body #content #serverlist #serverlist-ul {
   border-top: 4px solid #2e2e2e;
   width: 100%;
 }
-/* line 176, ../../app/stylesheets/screen.scss */
+/* line 177, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server {
   width: 100% -30px;
   border-bottom: 4px solid #2e2e2e;
@@ -658,17 +662,17 @@ body #content #serverlist .server {
   padding-left: 30px;
   border-radius: 5px;
 }
-/* line 185, ../../app/stylesheets/screen.scss */
+/* line 186, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server:hover {
   background: #8db6dc;
 }
-/* line 189, ../../app/stylesheets/screen.scss */
+/* line 190, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server .serverleft {
   float: left;
   width: 350px;
   height: 100%;
 }
-/* line 193, ../../app/stylesheets/screen.scss */
+/* line 194, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server .serverleft .servername {
   font-size: 20px;
   display: block;
@@ -676,14 +680,14 @@ body #content #serverlist .server .serverleft .servername {
   font-family: 'play';
   word-spacing: -5px;
 }
-/* line 201, ../../app/stylesheets/screen.scss */
+/* line 202, ../../app/stylesheets/screen.scss */
 body #content #serverlist .server .serverright {
   width: 540px;
   padding-top: 5px;
   line-height: 1em;
   float: right;
 }
-/* line 209, ../../app/stylesheets/screen.scss */
+/* line 210, ../../app/stylesheets/screen.scss */
 body #content #userlist {
   font-size: 15px;
   border-width: 2px;
@@ -692,41 +696,41 @@ body #content #userlist {
   background: url('/images/trans.png?1305402372');
   width: 100% -4px;
 }
-/* line 216, ../../app/stylesheets/screen.scss */
+/* line 217, ../../app/stylesheets/screen.scss */
 body #content #userlist #userfilters {
   background: #2e2e2e;
   font-size: 1.5em;
   color: white;
 }
-/* line 220, ../../app/stylesheets/screen.scss */
+/* line 221, ../../app/stylesheets/screen.scss */
 body #content #userlist #userfilters a {
   color: white;
 }
-/* line 221, ../../app/stylesheets/screen.scss */
+/* line 222, ../../app/stylesheets/screen.scss */
 body #content #userlist #userfilters div {
   color: black;
   padding: 20px;
   background: #b0d1f2;
   border-radius: 5px;
 }
-/* line 228, ../../app/stylesheets/screen.scss */
+/* line 229, ../../app/stylesheets/screen.scss */
 body #content #userlist ul {
   border-top: 5px solid #2e2e2e;
   width: 100%;
   margin: 0;
   padding: 0px;
 }
-/* line 234, ../../app/stylesheets/screen.scss */
+/* line 235, ../../app/stylesheets/screen.scss */
 body #content #userlist ul li:hover {
   background: #8db6dc;
 }
-/* line 239, ../../app/stylesheets/screen.scss */
+/* line 240, ../../app/stylesheets/screen.scss */
 body #content #userlist #userlist-header {
   font-size: 20px;
   line-height: 20px;
   height: 20px;
 }
-/* line 244, ../../app/stylesheets/screen.scss */
+/* line 245, ../../app/stylesheets/screen.scss */
 body #content #userlist .user {
   border-radius: 5px;
   width: 100%;
@@ -738,30 +742,30 @@ body #content #userlist .user {
   text-decoration: none;
   padding: 0px 20px 10px 30px;
 }
-/* line 255, ../../app/stylesheets/screen.scss */
+/* line 256, ../../app/stylesheets/screen.scss */
 body #content #userlist .user span {
   float: left;
   height: 10px;
   margin: 0px;
 }
-/* line 260, ../../app/stylesheets/screen.scss */
+/* line 261, ../../app/stylesheets/screen.scss */
 body #content #userlist .user .username {
   width: 300px;
   font-family: 'play';
 }
-/* line 264, ../../app/stylesheets/screen.scss */
+/* line 265, ../../app/stylesheets/screen.scss */
 body #content #userlist .user .mcusername {
   width: 200px;
 }
-/* line 269, ../../app/stylesheets/screen.scss */
+/* line 270, ../../app/stylesheets/screen.scss */
 body #content #showserver {
   padding: 0px 00px;
 }
-/* line 271, ../../app/stylesheets/screen.scss */
+/* line 272, ../../app/stylesheets/screen.scss */
 body #content #showserver .header {
   padding: 0px 0px;
 }
-/* line 274, ../../app/stylesheets/screen.scss */
+/* line 275, ../../app/stylesheets/screen.scss */
 body #content #showserver .header #servertitle div {
   word-wrap: break-word;
   line-height: 60px;
@@ -773,19 +777,19 @@ body #content #showserver .header #servertitle div {
   border-top-right-radius: 10px;
   padding-left: 20px;
 }
-/* line 290, ../../app/stylesheets/screen.scss */
+/* line 291, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody {
   padding: 20px;
   background: url('/images/trans.png?1305402372');
   width: 890px;
   border: 2px solid #6a7987;
 }
-/* line 295, ../../app/stylesheets/screen.scss */
+/* line 296, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #servercontent {
   width: 570px;
   float: left;
 }
-/* line 298, ../../app/stylesheets/screen.scss */
+/* line 299, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #servercontent #serverdetails {
   border-bottom: 5px solid #4d6a85;
   margin-bottom: 20px;
@@ -793,7 +797,7 @@ body #content #showserver #serverbody #servercontent #serverdetails {
   font-size: 20px;
   background: url('/images/trans.png?1305402372');
 }
-/* line 305, ../../app/stylesheets/screen.scss */
+/* line 306, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #servercontent #serveractions {
   border-left: 5px solid #333;
   padding: 10px;
@@ -802,7 +806,7 @@ body #content #showserver #serverbody #servercontent #serveractions {
   width: 570px;
   float: left;
 }
-/* line 314, ../../app/stylesheets/screen.scss */
+/* line 315, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo {
   float: right;
   width: 250px;
@@ -810,15 +814,15 @@ body #content #showserver #serverbody #serverinfo {
   border-bottom-left-radius: 15px;
   font-size: 20px;
 }
-/* line 320, ../../app/stylesheets/screen.scss */
+/* line 321, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo #serverinfo-title {
   text-align: center;
 }
-/* line 323, ../../app/stylesheets/screen.scss */
+/* line 324, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo hr {
   margin: 4px;
 }
-/* line 324, ../../app/stylesheets/screen.scss */
+/* line 325, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo .serverinfo-field {
   word-wrap: break-word;
   background: url('/images/trans.png?1305402372');
@@ -827,20 +831,20 @@ body #content #showserver #serverbody #serverinfo .serverinfo-field {
   text-indent: -10px;
   line-height: 20px;
 }
-/* line 331, ../../app/stylesheets/screen.scss */
+/* line 332, ../../app/stylesheets/screen.scss */
 body #content #showserver #serverbody #serverinfo .serverinfo-field b {
   color: black;
   font-size: 15px;
 }
-/* line 337, ../../app/stylesheets/screen.scss */
+/* line 338, ../../app/stylesheets/screen.scss */
 body #content #showuser {
   padding: 0px 00px;
 }
-/* line 339, ../../app/stylesheets/screen.scss */
+/* line 340, ../../app/stylesheets/screen.scss */
 body #content #showuser .header {
   padding: 0px 0px;
 }
-/* line 342, ../../app/stylesheets/screen.scss */
+/* line 343, ../../app/stylesheets/screen.scss */
 body #content #showuser .header #usertitle div {
   word-wrap: break-word;
   line-height: 60px;
@@ -852,19 +856,19 @@ body #content #showuser .header #usertitle div {
   border-top-right-radius: 10px;
   padding-left: 20px;
 }
-/* line 358, ../../app/stylesheets/screen.scss */
+/* line 359, ../../app/stylesheets/screen.scss */
 body #content #showuser #userbody {
   padding: 20px;
   background: url('/images/trans.png?1305402372');
   width: 890px;
   border: 2px solid #6a7987;
 }
-/* line 363, ../../app/stylesheets/screen.scss */
+/* line 364, ../../app/stylesheets/screen.scss */
 body #content #showuser #userbody #usercontent {
   width: 570px;
   float: left;
 }
-/* line 366, ../../app/stylesheets/screen.scss */
+/* line 367, ../../app/stylesheets/screen.scss */
 body #content #showuser #userbody #usercontent #userdetails {
   border-bottom: 5px solid #4d6a85;
   margin-bottom: 20px;
@@ -872,7 +876,7 @@ body #content #showuser #userbody #usercontent #userdetails {
   font-size: 20px;
   background: url('/images/trans.png?1305402372');
 }
-/* line 373, ../../app/stylesheets/screen.scss */
+/* line 374, ../../app/stylesheets/screen.scss */
 body #content #showuser #userbody #usercontent #useractions {
   border-left: 5px solid #333;
   padding: 10px;
@@ -881,7 +885,7 @@ body #content #showuser #userbody #usercontent #useractions {
   width: 570px;
   float: left;
 }
-/* line 382, ../../app/stylesheets/screen.scss */
+/* line 383, ../../app/stylesheets/screen.scss */
 body #content #showuser #userbody #userinfo {
   float: right;
   width: 250px;
@@ -889,15 +893,15 @@ body #content #showuser #userbody #userinfo {
   border-bottom-left-radius: 15px;
   font-size: 20px;
 }
-/* line 388, ../../app/stylesheets/screen.scss */
+/* line 389, ../../app/stylesheets/screen.scss */
 body #content #showuser #userbody #userinfo #userinfo-title {
   text-align: center;
 }
-/* line 391, ../../app/stylesheets/screen.scss */
+/* line 392, ../../app/stylesheets/screen.scss */
 body #content #showuser #userbody #userinfo hr {
   margin: 4px;
 }
-/* line 392, ../../app/stylesheets/screen.scss */
+/* line 393, ../../app/stylesheets/screen.scss */
 body #content #showuser #userbody #userinfo .userinfo-field {
   word-wrap: break-word;
   background: url('/images/trans.png?1305402372');
@@ -908,23 +912,23 @@ body #content #showuser #userbody #userinfo .userinfo-field {
   text-align: left;
   line-height: 20px;
 }
-/* line 401, ../../app/stylesheets/screen.scss */
+/* line 402, ../../app/stylesheets/screen.scss */
 body #content #showuser #userbody #userinfo .userinfo-field b {
   color: black;
   font-size: 15px;
 }
 
-/* line 409, ../../app/stylesheets/screen.scss */
+/* line 410, ../../app/stylesheets/screen.scss */
 #footer {
   padding: 10px 10px 10px 10px;
   margin-bottom: 20px;
 }
-/* line 412, ../../app/stylesheets/screen.scss */
+/* line 413, ../../app/stylesheets/screen.scss */
 #footer img {
   float: left;
   margin-right: 30px;
 }
-/* line 416, ../../app/stylesheets/screen.scss */
+/* line 417, ../../app/stylesheets/screen.scss */
 #footer div {
   margin: 0 auto 0 auto;
   height: 100%;
@@ -934,19 +938,19 @@ body #content #showuser #userbody #userinfo .userinfo-field b {
   background: #b0d1f2;
   box-shadow: 0 0 50px 10px #2e2e2e;
 }
-/* line 425, ../../app/stylesheets/screen.scss */
+/* line 426, ../../app/stylesheets/screen.scss */
 #footer div ul {
   float: left;
   display: inline;
 }
-/* line 428, ../../app/stylesheets/screen.scss */
+/* line 429, ../../app/stylesheets/screen.scss */
 #footer div ul lh {
   font-family: 'cabin sketch';
   font-size: 40px;
   border-bottom: 2px solid #6e8088;
   padding-right: 10px;
 }
-/* line 434, ../../app/stylesheets/screen.scss */
+/* line 435, ../../app/stylesheets/screen.scss */
 #footer div ul li {
   font-family: 'play';
   font-size: 14px;
@@ -954,7 +958,7 @@ body #content #showuser #userbody #userinfo .userinfo-field b {
   padding-left: 10px;
   border-bottom: 1px solid #6e8088;
 }
-/* line 440, ../../app/stylesheets/screen.scss */
+/* line 441, ../../app/stylesheets/screen.scss */
 #footer div ul li:hover {
   background: #a8c5e3;
 }
