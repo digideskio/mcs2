@@ -17,6 +17,16 @@ $(document).ready(function(){
   .click(function(e) {
       e.stopPropagation();
   });
+  
+  $('input#search').focus(function() {
+   $(this).val('');
+  });
+  
+  $('input#search').keypress(function(e){
+    if(e.which == 13){
+      $('#CommentChatForm').submit();
+    }
+  })
 
 
 });

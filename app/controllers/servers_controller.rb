@@ -3,11 +3,16 @@ class ServersController < ApplicationController
   before_filter :assign_user
   load_and_authorize_resource
   
+  def search
+    @servers = Server.paginate_by_sql ['select * from servers where name LIKE ?', "%#{params[:search]}%"], :page => params[:page]
+    render :index
+  end
+  
   # GET /servers
   # GET /servers.xml
   def index
-    @servers = Server.paginate(:page => params[:page])
-
+     @servers = Server.paginate(:page => params[:page])
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @servers }

@@ -6,7 +6,8 @@
           %li
             = link_to 'Submit New Server', new_server_path
         %li
-          %input{:type => "text", :value => "Search"}
+          =form_tag servers_search_path, :method => :post do
+            =text_field_tag :search, params[:search], :value => "Search"
     %div#serverheader
       %div
         %p
@@ -18,24 +19,27 @@
               
     %br.clearboth
   %ul#serverlist-ul
-    - @servers.each do |server|
-      %li{:class => "server", :id => server.id }
-        %span.serverleft
-          %span.servername
-            = link_to truncate(server.name,:length => 33), server
-          %b
-            =a_or_an game_mode_to_s server.game_mode
-            server.
-        %span.serverright
-          -if !server.website.nil? and !server.website.blank?
+    - if @servers.empty?
+      %p No servers found...
+    - else
+      - @servers.each do |server|
+        %li{:class => "server", :id => server.id }
+          %span.serverleft
+            %span.servername
+              = link_to truncate(server.name,:length => 33), server
             %b
-              website:
-            = link_to server.website, server.website, :target => "_blank"
-          %br
-          %b
-            Description:
-          = truncate(server.description,:length => 250, :separator => " ", :omission => "....")
-    = will_paginate @servers
+              =a_or_an game_mode_to_s server.game_mode
+              server.
+          %span.serverright
+            -if !server.website.nil? and !server.website.blank?
+              %b
+                website:
+              = link_to server.website, server.website, :target => "_blank"
+            %br
+            %b
+              Description:
+            = truncate(server.description,:length => 250, :separator => " ", :omission => "....")
+      = will_paginate @servers
   %br.clearboth
 
 

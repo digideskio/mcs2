@@ -4,6 +4,8 @@ Mcs2::Application.routes.draw do
   match "/faq" => "pages#faq", :as => "faq"
   match "/suggestions" => "pages#suggestions", :as => "suggestions"
   match "/contact" => "pages#contact", :as => "contact"
+  
+  match "/servers/search" => "servers#search", :as => "servers_search"
 
   resources :users, :only => [:show, :index]  
   
