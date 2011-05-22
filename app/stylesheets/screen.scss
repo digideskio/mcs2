@@ -277,12 +277,11 @@ body {
             line-height:60px;
             font-size:60px;
             font-family:'play';
-            color:black;
+            color:#d1d1d1;
+            background:#2e2e2e;
             padding:-20px 0px -50px 0px;
-            border-top-left-radius:10px;
-            border-top-right-radius:10px;
             padding-left: 20px;
-             
+            border-top:1px solid black;             
           }
 
 
@@ -291,8 +290,8 @@ body {
       #serverbody {
         padding:20px;
         background:image-url('trans.png');
-        width:890px;
-        border:2px solid #6a7987;
+        width:906px;
+        border:2px solid #2e2e2e;
         #servercontent {
           width:570px;
           float:left;
@@ -341,16 +340,15 @@ body {
         padding:0px 0px;
         #usertitle {
           div {
+            background:#2e2e2e;
             word-wrap:break-word;
             line-height:60px;
             font-size:60px;
             font-family:'play';
-            color:black;
+            color:#d1d1d1;
             padding:-20px 0px -50px 0px;
-            border-top-left-radius:10px;
-            border-top-right-radius:10px;
             padding-left: 20px;
-             
+            border-top:1px solid black;
           }
 
 
@@ -359,8 +357,8 @@ body {
       #userbody {
         padding:20px;
         background:image-url('trans.png');
-        width:890px;
-        border:2px solid #6a7987;
+        width:906px;
+        border:2px solid #2e2e2e;
         #usercontent {
           width:570px;
           float:left;
