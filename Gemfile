@@ -6,12 +6,12 @@ gem 'devise'
 gem 'haml'
 gem 'sass'
 gem 'barista'
-gem 'therubyracer', :require => nil
+#gem 'therubyracer', :require => nil
 gem 'jquery-rails'
 gem "compass", ">= 0.11.1"
 gem 'haml-rails'
 gem "will_paginate", "~>3.0.pre"
-
+gem 'therubyracer-heroku', '0.8.1.pre3'
 group :development do
   gem 'annotate-models'
 end
