@@ -10,4 +10,8 @@ module ServersHelper
       raise "error with game_mode helper method"
     end
   end
+  
+  def url_with_protocol(url)
+    /^http/.match(url) ? url : "http://#{url}"
+  end
 end
