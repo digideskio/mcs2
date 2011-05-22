@@ -15,8 +15,16 @@
   %body
     #container
       %header#header
-        %span#title
+        %div#title
           =link_to "Minecraft Server Corp", root_path
+        %br
+        %div#notifications
+          - if !notice.nil?
+            %div.success
+              =notice
+          - if !alert.nil?
+            %div.error
+              =alert
         %nav
           %ul
             %li
@@ -35,38 +43,30 @@
               -else
                 =link_to "Login", new_user_session_path
 
-      %hr
-      %div#notifications
-        - if !notice.nil?
-          %div.success
-            =notice
-        - if !alert.nil?
-          %div.error
-            =alert
       #content
         =yield
       %hr
-      %footer#footer
-        %div
-          %img{:src => "http://www.minecraftwiki.net/images/f/f0/Cake.png"}
-          %ul
-            %lh Your Stuff
-            %li Profile
-            %li Account
-            %li Submitted Servers
-          %ul
-            %lh Our Stuff
-            %li FAQ
-            %li About
-            %li Suggestions
-            %li Contact
+    %footer#footer
+      %div
+        %img{:src => "http://www.minecraftwiki.net/images/f/f0/Cake.png"}
+        %ul
+          %lh Your Stuff
+          %li Profile
+          %li Account
+          %li Submitted Servers
+        %ul
+          %lh Our Stuff
+          %li FAQ
+          %li About
+          %li Suggestions
+          %li Contact
 
-          %ul
-            %lh Other Stuff
-            %li Minecraft
-            %li r/minecraft 
-            %li Ruby on Rails
-            
-          %br.clearboth 
+        %ul
+          %lh Other Stuff
+          %li Minecraft
+          %li r/minecraft 
+          %li Ruby on Rails
+          
+        %br.clearboth 
         
         
