@@ -917,18 +917,27 @@ body #content #showuser #userbody #userinfo .userinfo-field b {
   color: black;
   font-size: 15px;
 }
+/* line 408, ../../app/stylesheets/screen.scss */
+body #content .underconstruction {
+  text-align: center;
+  height: 400px;
+  font-size: 60px;
+  font-family: 'cabin sketch';
+  background: #4e4e4e;
+  width: 948px;
+}
 
-/* line 410, ../../app/stylesheets/screen.scss */
+/* line 419, ../../app/stylesheets/screen.scss */
 #footer {
   padding: 10px 10px 10px 10px;
   margin-bottom: 20px;
 }
-/* line 413, ../../app/stylesheets/screen.scss */
+/* line 422, ../../app/stylesheets/screen.scss */
 #footer img {
   float: left;
   margin-right: 30px;
 }
-/* line 417, ../../app/stylesheets/screen.scss */
+/* line 426, ../../app/stylesheets/screen.scss */
 #footer div {
   margin: 0 auto 0 auto;
   height: 100%;
@@ -938,19 +947,19 @@ body #content #showuser #userbody #userinfo .userinfo-field b {
   background: #b0d1f2;
   box-shadow: 0 0 50px 10px #2e2e2e;
 }
-/* line 426, ../../app/stylesheets/screen.scss */
+/* line 435, ../../app/stylesheets/screen.scss */
 #footer div ul {
   float: left;
   display: inline;
 }
-/* line 429, ../../app/stylesheets/screen.scss */
+/* line 438, ../../app/stylesheets/screen.scss */
 #footer div ul lh {
   font-family: 'cabin sketch';
   font-size: 40px;
   border-bottom: 2px solid #6e8088;
   padding-right: 10px;
 }
-/* line 435, ../../app/stylesheets/screen.scss */
+/* line 444, ../../app/stylesheets/screen.scss */
 #footer div ul li {
   font-family: 'play';
   font-size: 14px;
@@ -958,7 +967,7 @@ body #content #showuser #userbody #userinfo .userinfo-field b {
   padding-left: 10px;
   border-bottom: 1px solid #6e8088;
 }
-/* line 441, ../../app/stylesheets/screen.scss */
+/* line 450, ../../app/stylesheets/screen.scss */
 #footer div ul li:hover {
   background: #a8c5e3;
 }
