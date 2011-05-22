@@ -41,7 +41,7 @@
           %b
             Website:
           %br
-          = link_to @server.website, @server.website, :target => "_blank"
+          = link_to @server.website, url_with_protocol(@server.website), :target => "_blank"
       %div.serverinfo-field
         %b
           Server IP:
