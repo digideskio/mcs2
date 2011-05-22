@@ -6,8 +6,9 @@
   %div#userbody
     %div#usercontent
       %div#userdetails
-        Bio here.
-        %hr
+        -if !@user.bio.nil? and !@user.bio.blank?
+          =@user.bio
+          %hr
       %div#useractions
         %ul
           %li
@@ -18,10 +19,17 @@
         User Basics
         %hr
         %div.userinfo-field
-          %b
-            Website:
-          %br
-          website
+          - if !@user.mc_username.nil? and !@user.mc_username.blank?
+            %b
+              Minecraft Username:
+            %br
+            =@user.mc_username
+        %div.userinfo-field
+          - if !@user.website.nil? and !@user.website.blank?
+            %b
+              Website:
+            %br
+            =@user.website
     %br.clearboth
 - if can? :update, @user
   = link_to 'Edit', edit_user_registration_path(@user)
