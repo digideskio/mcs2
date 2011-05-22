@@ -51,22 +51,36 @@
         %img{:src => "http://www.minecraftwiki.net/images/f/f0/Cake.png"}
         %ul
           %lh Your Stuff
-          %li Profile
-          %li Account
-          %li Submitted Servers
+          - if user_signed_in?
+            %li
+              = link_to 'Profile', user_path(current_user.id)
+            %li
+              = link_to 'Account', edit_user_registration_path(current_user.id)
+            %li
+              Submitted Servers
+          - else
+            %li
+              = link_to 'Login', new_user_session_path
+            %li 
+              = link_to 'Register', new_user_registration_path
         %ul
           %lh Our Stuff
-          %li FAQ
-          %li About
-          %li Suggestions
-          %li Contact
-
+          %li
+            = link_to 'FAQ', faq_path
+          %li
+            = link_to 'About', about_path
+          %li
+            = link_to 'Suggestions', suggestions_path
+          %li
+            = link_to 'Contact', contact_path
         %ul
           %lh Other Stuff
-          %li Minecraft
-          %li r/minecraft 
-          %li Ruby on Rails
-          
+          %li
+            = link_to 'Minecraft', url_with_protocol('minecraft.net'), :target => "_blank"
+          %li 
+            = link_to 'r/Minecraft', url_with_protocol('reddit.com/r/minecraft'), :target => "_blank" 
+          %li
+            = link_to 'Ruby on Rails', url_with_protocol('rubyonrails.org'), :target => "_blank"
         %br.clearboth 
         
         
