@@ -1,4 +1,7 @@
 Mcs2::Application.configure do
+  #for devise emails
+  config.action_mailer.default_url_options = { :host => 'mcscorp.heroku.com' }
+  
   # Settings specified here will take precedence over those in config/application.rb
 
   # The production environment is meant for finished, "live" apps.

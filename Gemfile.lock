@@ -58,6 +58,7 @@ GEM
     jquery-rails (1.0.4)
       railties (~> 3.0)
       thor (~> 0.14)
+    json_pure (1.5.1)
     mail (2.2.19)
       activesupport (>= 2.3.6)
       i18n (>= 0.4.0)
@@ -106,7 +107,13 @@ DEPENDENCIES
   haml
   haml-rails
   jquery-rails
+  json_pure
   rails (= 3.0.7)
   sass
   sqlite3
+<<<<<<< HEAD
+=======
+  therubyracer
+  therubyracer-heroku (= 0.8.1.pre3)
+>>>>>>> e8d2fe939ec8a810f99037285b1b02472ededae3
   will_paginate (~> 3.0.pre)

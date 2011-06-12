@@ -5,15 +5,18 @@ gem 'cancan'
 gem 'devise'
 gem 'haml'
 gem 'sass'
-# gem 'barista'
-# gem 'therubyracer', :require => nil
+gem 'barista'
+gem 'json_pure'
 gem 'jquery-rails'
 gem "compass", ">= 0.11.1"
 gem 'haml-rails'
 gem "will_paginate", "~>3.0.pre"
-
+group :production do
+  gem 'therubyracer-heroku', '0.8.1.pre3'
+end
 group :development do
   gem 'annotate-models'
+  gem 'therubyracer', :require => nil
 end
 
 # Bundle edge Rails instead:

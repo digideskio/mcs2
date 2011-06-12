@@ -29,7 +29,7 @@
             %b
               Website:
             %br
-            =@user.website
+            = link_to @user.website, url_with_protocol(@user.website), :target => "_blank"
     %br.clearboth
 - if can? :update, @user
   = link_to 'Edit', edit_user_registration_path(@user)
